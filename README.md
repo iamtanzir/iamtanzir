@@ -68,20 +68,21 @@ counter for details.*
 
 | Metric | Count |
 | --- | --- |
-| Repositories | 140 |
+| Repositories (total) | 141 |
+| Original projects | 15 |
+| Forks / curated | 126 |
 | Stars | 8 |
 | Followers | 30 |
-| Forks | 1 |
 | Years on GitHub | 9+ |
 
-Top languages:
+Top languages (original projects):
 
 ```text
-Kotlin        ████ 31%
-TypeScript    ███   17%
-JavaScript    ██    17%
-Shell         ██    17%
-HTML          ██    17%
+JavaScript    ██████   3 repos
+Kotlin        ████     2 repos
+TypeScript    ██       1 repo
+Shell         ██       1 repo
+HTML          ██       1 repo
 ```
 
 Auto-refreshed weekly from the GitHub API.
@@ -90,16 +91,27 @@ Auto-refreshed weekly from the GitHub API.
 
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Argo CD](https://img.shields.io/badge/Argo_CD-E04E36?style=flat-square&logo=argo&logoColor=white) ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white) ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
 
-## Projects
+## Projects — 15 original, by real code
 
-Selected work across 140+ public repositories:
+| Project | What it is | Stack | Live |
+| --- | --- | --- | --- |
+| [Wash-ERP](https://github.com/iamtanzir/Wash-ERP) | ERP optimized for Vercel + Turso | TypeScript | [wash-erp.vercel.app](https://wash-erp.vercel.app) |
+| [tanzir-ai](https://github.com/iamtanzir/tanzir-ai) | Multi-provider AI chat (Puter, Gemini, Groq, OpenRouter, OpenAI…) with hacker/cyberpunk UI | JavaScript | [tanzir-ai.onrender.com](https://tanzir-ai.onrender.com/) |
+| [IPS-Monitoring-System](https://github.com/iamtanzir/IPS-Monitoring-System) | Universal IPS / hybrid inverter / solar panel monitoring system | Kotlin | — |
+| [LFP-Battery-Calculator](https://github.com/iamtanzir/LFP-Battery-Calculator) | LFP battery capacity & runtime calculator | Kotlin | — |
+| [DeepSeek-v4-1-Flash-Free](https://github.com/iamtanzir/DeepSeek-v4-1-Flash-Free) | DeepSeek v4.1 Flash & Coder (free-lifetime) notes + scripts | Shell | — |
+| [Pi-3B-setup-with-Earning-Apps](https://github.com/iamtanzir/Pi-3B-setup-with-Earning-Apps) | Raspberry Pi 3B infra — Pi-hole + Honeygain + EarnApp | DevOps / Linux | — |
+| [BDIX-Tester](https://github.com/iamtanzir/BDIX-Tester) | BDIX server access tester for Bangladesh | Tooling | — |
+| [DNS-Server-List](https://github.com/iamtanzir/DNS-Server-List) | Ad-block DNS list for a distraction-free, secure online experience | DNS / Privacy | — |
+| [Any-Theme-Template](https://github.com/iamtanzir/Any-Theme-Template) | Any Theme template clone | HTML / CSS / SCSS | — |
+| [nextjs-blog-theme](https://github.com/iamtanzir/nextjs-blog-theme) | Minimal Next.js blog theme with Markdown support | JavaScript | — |
+| [SMS-Verification-Site](https://github.com/iamtanzir/SMS-Verification-Site) | SMS verification site | Web | — |
 
-- **Platform engineering** — opinionated Kubernetes + Terraform blueprints,
-  GitOps delivery and cost-aware AWS foundations.
-- **DevSecOps tooling** — security scanners, policy-as-code and automated
-  hardening bundled into CI pipelines.
-- **Observability stacks** — Prometheus / Grafana dashboards tuned for real
-  production traffic.
+Plus this profile repo: [iamtanzir/iamtanzir](https://github.com/iamtanzir/iamtanzir)
+(auto-updated Dhaka time badge, view + country counters, GitHub Actions).
+
+The other 126 repos are forks/curation — bug bounty notes, security tooling,
+AI agent frameworks and big community projects I follow, not my own code.
 
 Browse everything on the [Repositories tab](https://github.com/iamtanzir?tab=repositories).
 
