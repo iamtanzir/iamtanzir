@@ -1,4 +1,4 @@
-name: Update live clock
+name: Update Dhaka time badge
 
 on:
   schedule:
@@ -17,16 +17,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Regenerate Dhaka clock
-        run: node scripts/clock.mjs > assets/bd-clock.svg
+      - name: Regenerate Dhaka time JSON
+        run: node scripts/time-badge.mjs assets/time.json
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/bd-clock.svg
+          git add assets/time.json
           if git diff --cached --quiet; then
             echo "No changes."
           else
-            git commit -m "chore: update Dhaka clock"
+            git commit -m "chore: update Dhaka time badge"
             git push
           fi
