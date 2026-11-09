@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="A.K.M Tanzir Ahmed — Senior DevOps Engineer">
+  
+  <defs>
+    <pattern id="grid-hero" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#00ff88" stroke-width="0.7" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="glow-hero" cx="50%" cy="0%" r="85%">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#00ff88" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-hero" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="400" rx="20" fill="#000000"/>
+  <rect width="1200" height="400" rx="20" fill="url(#grid-hero)"/>
+  <ellipse cx="420" cy="40" rx="620" ry="300" fill="url(#glow-hero)"/>
+  <rect x="1" y="1" width="1198" height="398" rx="20" fill="none" stroke="#123a27" stroke-width="1.4"/>
+  <path d="M 20 42 L 20 20 L 42 20" stroke="#00ff88" stroke-width="2.2" fill="none" opacity="0.85"/>
+  <path d="M 1180 42 L 1180 20 L 1158 20" stroke="#00ff88" stroke-width="2.2" fill="none" opacity="0.85"/>
+  <path d="M 20 358 L 20 380 L 42 380" stroke="#00ff88" stroke-width="2.2" fill="none" opacity="0.85"/>
+  <path d="M 1180 358 L 1180 380 L 1158 380" stroke="#00ff88" stroke-width="2.2" fill="none" opacity="0.85"/>
+
+  <!-- title bar -->
+  <rect x="1" y="1" width="1198" height="40" rx="20" fill="#040a07"/>
+  <rect x="1" y="30" width="1198" height="12" fill="#040a07"/>
+  <line x1="1" y1="41" x2="1199" y2="41" stroke="#123a27"/>
+  <circle cx="28" cy="21" r="5" fill="#ff5f57"/>
+  <circle cx="46" cy="21" r="5" fill="#febc2e"/>
+  <circle cx="64" cy="21" r="5" fill="#28c840"/>
+  <text x="90" y="25" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="11.5" letter-spacing="2" fill="#7f9c8d">tanzir@devops: ~/profile</text>
+  <text x="1178" y="25" text-anchor="end" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="11" letter-spacing="2" fill="#2f5544">zsh · utf-8 · 120x40</text>
+
+  <!-- monogram -->
+  <g transform="translate(58 88)">
+    <rect width="112" height="112" rx="16" fill="#020a06" stroke="#00ff88" stroke-width="1.6"/>
+    <rect x="8" y="8" width="96" height="96" rx="11" fill="none" stroke="#0f3d29"/>
+    <text x="56" y="70" text-anchor="middle" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="44" font-weight="700" fill="#00ff88">TA</text>
+    <circle cx="56" cy="88" r="3" fill="#00ff88">
+      <animate attributeName="opacity" values="1;0.15;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- identity -->
+  <text x="202" y="132" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="45" font-weight="700" fill="#e9fff5" letter-spacing="0.6">A.K.M TANZIR AHMED</text>
+  <text x="204" y="166" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="14.5" letter-spacing="6.2" fill="#00ff88">SENIOR DEVOPS ENGINEER</text>
+  <line x1="204" y1="186" x2="640" y2="186" stroke="#123a27"/>
+  <text x="204" y="212" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="12.5" letter-spacing="1.2" fill="#7f9c8d">Cloud Infrastructure · Kubernetes · CI/CD · Platform Engineering · DevSecOps</text>
+  <text x="204" y="234" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="12.5" letter-spacing="1.2" fill="#7f9c8d">Dhaka, Bangladesh · UTC+06:00 · Remote worldwide</text>
+
+  <!-- terminal -->
+  <g transform="translate(700 78)">
+    <rect width="444" height="236" rx="12" fill="#020a06" stroke="#134330" stroke-width="1.2"/>
+    <rect width="444" height="26" rx="12" fill="#051009"/>
+    <rect y="14" width="444" height="12" fill="#051009"/>
+    <line x1="0" y1="26" x2="444" y2="26" stroke="#134330"/>
+    <text x="14" y="18" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="10.5" letter-spacing="2" fill="#3f6b56">~/ops/status.log</text>
+    <g font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="12.6">
+      <text x="18" y="52" fill="#00ff88">$</text><text x="36" y="52" fill="#e9fff5"> whoami</text>
+      <text x="36" y="72" fill="#7f9c8d">devops · sre · security researcher</text>
+      <text x="18" y="98" fill="#00ff88">$</text><text x="36" y="98" fill="#e9fff5"> uptime</text>
+      <text x="36" y="118" fill="#7f9c8d">8+ years · shipping 99.99% systems</text>
+      <text x="18" y="144" fill="#00ff88">$</text><text x="36" y="144" fill="#e9fff5"> stack --top</text>
+      <text x="36" y="164" fill="#7f9c8d">aws · k8s · terraform · argocd · grafana</text>
+      <text x="18" y="190" fill="#00ff88">$</text><text x="36" y="190" fill="#e9fff5"> status</text>
+      <text x="36" y="210" fill="#00ff88">[ ONLINE ]</text><text x="118" y="210" fill="#7f9c8d">open to high-impact remote roles</text>
+    </g>
+    <rect x="18" y="222" width="8" height="14" fill="#00ff88" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.05;0.9" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- chips -->
+  <g transform="translate(58 300)"><rect width="116" height="28" rx="14" fill="#02110a" stroke="#14402c"/><text x="58" y="18.5" text-anchor="middle" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="10.5" letter-spacing="1.6" fill="#00ff88">AWS</text></g>
+  <g transform="translate(186 300)"><rect width="116" height="28" rx="14" fill="#02110a" stroke="#14402c"/><text x="58" y="18.5" text-anchor="middle" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="10.5" letter-spacing="1.6" fill="#00ff88">KUBERNETES</text></g>
+  <g transform="translate(314 300)"><rect width="116" height="28" rx="14" fill="#02110a" stroke="#14402c"/><text x="58" y="18.5" text-anchor="middle" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="10.5" letter-spacing="1.6" fill="#00ff88">TERRAFORM</text></g>
+  <g transform="translate(442 300)"><rect width="116" height="28" rx="14" fill="#02110a" stroke="#14402c"/><text x="58" y="18.5" text-anchor="middle" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="10.5" letter-spacing="1.6" fill="#00ff88">GITOPS</text></g>
+  <g transform="translate(570 300)"><rect width="116" height="28" rx="14" fill="#02110a" stroke="#14402c"/><text x="58" y="18.5" text-anchor="middle" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="10.5" letter-spacing="1.6" fill="#00ff88">SRE</text></g>
+  <g transform="translate(698 300)"><rect width="116" height="28" rx="14" fill="#02110a" stroke="#14402c"/><text x="58" y="18.5" text-anchor="middle" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="10.5" letter-spacing="1.6" fill="#00ff88">SECURITY</text></g>
+
+  <!-- footer line -->
+  <line x1="58" y1="348" x2="1142" y2="348" stroke="#0d2c1e"/>
+  <text x="58" y="370" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="11" letter-spacing="2.4" fill="#2f5544">SYSTEMS ONLINE</text>
+  <circle cx="196" cy="366" r="3.4" fill="#00ff88"><animate attributeName="opacity" values="1;0.15;1" dur="1.8s" repeatCount="indefinite"/></circle>
+  <text x="1142" y="370" text-anchor="end" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="11" letter-spacing="2.4" fill="#2f5544">DHAKA · BD · UTC+06:00</text>
+
+  <!-- scan sweep -->
+  <rect x="-400" y="42" width="300" height="350" fill="#00ff88" opacity="0.02" transform="skewX(-20)">
+    <animate attributeName="x" values="-400;1300" dur="9s" repeatCount="indefinite"/>
+  </rect>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="70" viewBox="0 0 1200 70" role="img" aria-label="ABOUT">
+  <rect width="1200" height="70" fill="#000000"/>
+  <rect y="69" width="1200" height="1" fill="#0d2c1e"/>
+  <g transform="translate(10 14)">
+    <path d="M 0 0 L 0 24 L 8 24" stroke="#00ff88" stroke-width="2" fill="none"/>
+  </g>
+  <text x="32" y="32" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="12" letter-spacing="3" fill="#2f5544">// 01</text>
+  <text x="72" y="34" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="5" fill="#e9fff5">ABOUT</text>
+  <line x1="210" y1="30" x2="1090" y2="30" stroke="#123a27" stroke-width="1"/>
+  <text x="1120" y="34" font-family="'JetBrains Mono',Consolas,'Courier New',monospace" font-size="10.5" letter-spacing="2.6" fill="#2f5544">WHOAMI</text>
+  <circle cx="1108" cy="30" r="2.6" fill="#00ff88"/>
+</svg>
