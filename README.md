@@ -95,7 +95,7 @@ Auto-refreshed weekly from the GitHub API.
 
 | Project | What it is | Stack | Live |
 | --- | --- | --- | --- |
-| [Wash-ERP](https://github.com/iamtanzir/Wash-ERP) | ERP optimized for Vercel + Turso | TypeScript | [wash-erp.vercel.app](https://wash-erp.vercel.app) |
+| [Wash-ERP](https://github.com/iamtanzir/Wash-ERP) | ERP optimized for Vercel + Turso | TypeScript | [wash-erp.vercel.app](https://washerp.vercel.app) |
 | [tanzir-ai](https://github.com/iamtanzir/tanzir-ai) | Multi-provider AI chat (Puter, Gemini, Groq, OpenRouter, OpenAI…) with hacker/cyberpunk UI | JavaScript | [tanzir-ai.onrender.com](https://tanzir-ai.onrender.com/) |
 | [IPS-Monitoring-System](https://github.com/iamtanzir/IPS-Monitoring-System) | Universal IPS / hybrid inverter / solar panel monitoring system | Kotlin | — |
 | [LFP-Battery-Calculator](https://github.com/iamtanzir/LFP-Battery-Calculator) | LFP battery capacity & runtime calculator | Kotlin | — |
