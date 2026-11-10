@@ -1,6 +1,6 @@
 <div align="center">
   
-#**DevOps Engineer** — cloud · Kubernetes · CI/CD · automation
+#DevOps Engineer — cloud · Kubernetes · CI/CD · automation
 
 Bangladesh · UTC+06:00 · remote worldwide
 
