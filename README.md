@@ -4,7 +4,7 @@
 
 Bangladesh · UTC+06:00 · remote worldwide
 
-[GitHub](https://github.com/iamtanzir) · [LinkedIn](https://www.linkedin.com/in/akm-tanzir-ahmed) · [SupportKori](https://www.supportkori.com/tanzirahmed) · [Twitter](https://twitter.com/tanzir786) · [Email](mailto:tanzir.iu@gmail.com)
+[GitHub](https://github.com/iamtanzir) · [LinkedIn](https://www.linkedin.com/in/akm-tanzir-ahmed) · [Portfolio](https://iamtanzir.github.io/) · [SupportKori](https://www.supportkori.com/tanzirahmed) · [Twitter](https://twitter.com/tanzir786) · [Email](mailto:tanzir.iu@gmail.com)
 
 ![views](https://komarev.com/ghpvc/?username=iamtanzir&label=PROFILE+VIEWS&color=00FF88&style=for-the-badge)
 
@@ -69,7 +69,7 @@ If my work helped you, you can support via **SupportKori**:
 | SupportKori | https://www.supportkori.com/tanzirahmed |
 | GitHub | https://github.com/iamtanzir |
 | LinkedIn | https://www.linkedin.com/in/akm-tanzir-ahmed |
-| Portfolio | https://github.com/iamtanzir?tab=repositories |
+| Portfolio | https://iamtanzir.github.io/ |
 | Email | tanzir.iu@gmail.com |
 
 ---
