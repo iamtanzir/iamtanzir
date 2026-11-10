@@ -51,6 +51,14 @@ checks.
 
 ![dhaka-date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fiamtanzir%2Fiamtanzir%2Fmain%2Fassets%2Ftime.json&query=%24.date&label=DATE&color=00FF88&labelColor=0A0E17&style=for-the-badge&cacheSeconds=60)
 
+<div align="center">
+
+<img src="assets/bd-clock.svg" alt="Live Dhaka digital clock — black card, green neon digits, AM/PM" width="920">
+
+</div>
+
+*Auto-refreshed every 5 minutes by GitHub Actions. The card ticks live — seconds, minutes and AM/PM animate in your browser, and the green dot blinks while the feed is on.*
+
 ### Visitors — total counted automatically
 
 | Counter | Value |
