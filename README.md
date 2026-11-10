@@ -1,10 +1,7 @@
 <div align="center">
-
-# A.K.M TANZIR AHMED
-
 **DevOps Engineer** — cloud · Kubernetes · CI/CD · automation
 
-Dhaka, Bangladesh · UTC+06:00 · remote worldwide
+Bangladesh · UTC+06:00 · remote worldwide
 
 [GitHub](https://github.com/iamtanzir) · [LinkedIn](https://www.linkedin.com/in/akm-tanzir-ahmed) · [Portfolio](https://iamtanzir.github.io/) · [Twitter](https://twitter.com/tanzir786) · [Email](mailto:tanzir.iu@gmail.com)
 
@@ -17,9 +14,9 @@ Dhaka, Bangladesh · UTC+06:00 · remote worldwide
 ## About
 
 I build and run infrastructure: AWS, Kubernetes, Terraform, GitHub Actions.
-I like things automated, observable, and that don't break at 2am.
+I like things automated, observable, and that don't break at 2 am.
 
-Outside work I ship side projects — a laundry ERP, a multi-provider AI chat
+Outside work, I ship side projects — a laundry ERP, a multi-provider AI chat
 app, and an Android app for monitoring solar panels and inverters.
 
 **Stack:** AWS · Kubernetes · Docker · Terraform · Ansible · GitHub Actions · Argo CD · Prometheus · Grafana · Linux · Bash · Python · TypeScript · Kotlin
