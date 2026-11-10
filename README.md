@@ -43,7 +43,7 @@ checks.
 
 <div align="center">
 
-<img src="assets/bd-clock.svg" alt="Live Dhaka digital clock — black card, green neon digits, AM/PM" width="620">
+<img src="assets/bd-clock.svg" alt="Live Dhaka digital clock — black card, green neon digits, AM/PM" width="420">
 
 </div>
 
