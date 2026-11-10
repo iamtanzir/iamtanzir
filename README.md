@@ -41,23 +41,11 @@ checks.
 - **Security:** DevSecOps, Vault, Trivy, SAST / DAST
 - **OS & Networking:** Linux, Nginx, HAProxy, WireGuard, Cloudflare
 
-## Live — Dhaka, Bangladesh
-
-> BST · UTC+06:00 · No daylight saving
-
-`DHAKA` time on this profile is always live (auto-updated every few minutes):
-
-![dhaka-time](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fiamtanzir%2Fiamtanzir%2Fmain%2Fassets%2Ftime.json&query=%24.time&label=DHAKA&color=00FF88&labelColor=0A0E17&style=for-the-badge&cacheSeconds=60)
-
-![dhaka-date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fiamtanzir%2Fiamtanzir%2Fmain%2Fassets%2Ftime.json&query=%24.date&label=DATE&color=00FF88&labelColor=0A0E17&style=for-the-badge&cacheSeconds=60)
-
 <div align="center">
 
-<img src="assets/bd-clock.svg" alt="Live Dhaka digital clock — black card, green neon digits, AM/PM" width="920">
+<img src="assets/bd-clock.svg" alt="Live Dhaka digital clock — black card, green neon digits, AM/PM" width="620">
 
 </div>
-
-*Auto-refreshed every 5 minutes by GitHub Actions. The card ticks live — seconds, minutes and AM/PM animate in your browser, and the green dot blinks while the feed is on.*
 
 ### Visitors — total counted automatically
 
