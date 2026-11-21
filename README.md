@@ -5,12 +5,17 @@
 
 <!-- Typing Animation -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00FF88&center=true&vCenter=true&width=650&lines=ERP+%26+Analytics+%7C+Wash+Planning;Cloud+%7C+Kubernetes+%7C+CI%2FCD;11%2B+Years+in+Apparel+ERP;Always+building%2C+always+automating" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00FF88&center=true&vCenter=true&width=650&lines=CS+Engineer+%7C+ERP+Analyst+%7C+Planner;11%2B+Years+in+Apparel+ERP;Cloud+%7C+Kubernetes+%7C+CI%2FCD;Always+building%2C+always+automating" alt="Typing SVG" />
 </a>
 
 <!-- Tagline -->
-<p><b>Computer Science Engineer · ERP Analyst · Planner · DevOps Practitioner</b><br/>
+<p><b>CS Engineer | ERP Analyst | Planner</b><br/>
 📍 Dhaka, Bangladesh (UTC+06:00) · Open to remote worldwide</p>
+
+<!-- Live BD Digital Clock -->
+<p>
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fworldtimeapi.org%2Fapi%2Ftimezone%2FAsia%2FDhaka&query=%24.time&label=%F0%9F%95%90%20Live%20Dhaka%20Time%20(UTC%2B06%3A00)&color=00FF88&style=for-the-badge" alt="Live Dhaka Time" />
+</p>
 
 <!-- Social & Contact Badges -->
 <p>
@@ -38,7 +43,7 @@
 
 ## 🧑‍💻 About Me
 
-I'm a **Computer Science Engineer** with **11+ years** in the apparel industry — bridging the factory floor and the cloud. I specialize in **ERP implementation, wash planning, and production analytics** for global buyer programs (American Eagle, H&M, Primark, Next, OVS, C&A, Jack & Jones, Tom Tailor). I've been rolling out ERP systems since **2015** and have driven **95%+ on-time delivery** across **10+ buyer programs**.
+I'm a **CS Engineer | ERP Analyst | Planner** with **11+ years** in the apparel industry — bridging the factory floor and the cloud. I specialize in **ERP implementation, wash planning, and production analytics** for global buyer programs (American Eagle, H&M, Primark, Next, OVS, C&A, Jack & Jones, Tom Tailor). I've been rolling out ERP systems since **2015** and have driven **95%+ on-time delivery** across **10+ buyer programs**.
 
 Outside of the day job, I build tools that scratch my own itch: a laundry ERP, a multi-provider AI chat app, Android apps for solar/inverter monitoring, and a range of DevOps side-projects. I believe in **learning by breaking things and fixing them**.
 
