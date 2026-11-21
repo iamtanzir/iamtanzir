@@ -10,7 +10,7 @@
 
 <!-- LIVE MINI DIGITAL CLOCK -->
 <p>
-  <img src="https://live-clock.tanzir-ahmed.workers.dev/?v=1795268515653" alt="Live Dhaka Digital Clock" width="350" />
+  <img src="https://live-clock.tanzir-ahmed.workers.dev/?v=1795268575340" alt="Live Dhaka Digital Clock" width="350" />
 </p>
 
 <!-- CI STATUS -->
@@ -43,22 +43,22 @@
 
 ---
 
-## ÃÂ°ÃÂÃÂ§ÃÂÃÂ¢ÃÂÃÂÃÂ°ÃÂÃÂÃÂ» About Me
+## ÃÂÃÂ°ÃÂÃÂÃÂÃÂ§ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ» About Me
 
-I'm a **CS Engineer | ERP Analyst | Planner** with **11+ years** in the apparel industry ÃÂ¢ÃÂÃÂ bridging the factory floor and the cloud. I specialize in **ERP implementation, wash planning, and production analytics** for global buyer programs (American Eagle, H&M, Primark, Next, OVS, C&A, Jack & Jones, Tom Tailor). I've been rolling out ERP systems since **2015** and have driven **95%+ on-time delivery** across **10+ buyer programs**.
+I'm a **CS Engineer | ERP Analyst | Planner** with **11+ years** in the apparel industry ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ bridging the factory floor and the cloud. I specialize in **ERP implementation, wash planning, and production analytics** for global buyer programs (American Eagle, H&M, Primark, Next, OVS, C&A, Jack & Jones, Tom Tailor). I've been rolling out ERP systems since **2015** and have driven **95%+ on-time delivery** across **10+ buyer programs**.
 
 Outside of the day job, I build tools that scratch my own itch: a laundry ERP, a multi-provider AI chat app, Android apps for solar/inverter monitoring, and a range of DevOps side-projects. I believe in **learning by breaking things and fixing them**.
 
-- ÃÂ°ÃÂÃÂÃÂ­ Currently working on **[Wash-ERP](https://github.com/iamtanzir/Wash-ERP)** and **[tanzir-ai](https://github.com/iamtanzir/tanzir-ai)**
-- ÃÂ°ÃÂÃÂÃÂ± Exploring **Argo CD** and **Platform Engineering**
-- ÃÂ°ÃÂÃÂÃÂ¬ Ask me about **ERP (Zilingo/zFactory), Advanced Excel, SQL, KPIs, Kubernetes, Terraform, CI/CD**
-- ÃÂ¢ÃÂÃÂ¡ Fun fact: I run a Pi-hole + Honeygain stack on a Raspberry Pi 3B
+- ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ­ Currently working on **[Wash-ERP](https://github.com/iamtanzir/Wash-ERP)** and **[tanzir-ai](https://github.com/iamtanzir/tanzir-ai)**
+- ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ± Exploring **Argo CD** and **Platform Engineering**
+- ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ¬ Ask me about **ERP (Zilingo/zFactory), Advanced Excel, SQL, KPIs, Kubernetes, Terraform, CI/CD**
+- ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ¡ Fun fact: I run a Pi-hole + Honeygain stack on a Raspberry Pi 3B
 
 ---
 
-## ÃÂ°ÃÂÃÂÃÂ ÃÂ¯ÃÂ¸ÃÂ Tech Stack
+## ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ ÃÂÃÂ¯ÃÂÃÂ¸ÃÂÃÂ Tech Stack
 
-**ERP ÃÂÃÂ· Analytics ÃÂÃÂ· Planning**  
+**ERP ÃÂÃÂÃÂÃÂ· Analytics ÃÂÃÂÃÂÃÂ· Planning**  
 ![ERP](https://img.shields.io/badge/ERP-Zilingo%2FzFactory-00FF88?style=for-the-badge)
 ![Excel](https://img.shields.io/badge/Advanced_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -88,27 +88,27 @@ Outside of the day job, I build tools that scratch my own itch: a laundry ERP, a
 
 ---
 
-## ÃÂ°ÃÂÃÂÃÂ¼ Experience
+## ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ¼ Experience
 
 | Period | Role | Focus |
 |--------|------|-------|
-| **Jan 2023 ÃÂ¢ÃÂÃÂ Present** | Wash Operation & Central Planner | Wash planning, KPI dashboards, cross-factory coordination |
-| **Mar 2015 ÃÂ¢ÃÂÃÂ Dec 2022** | ERP Implementation Specialist | Zilingo/zFactory ERP rollout, floor training, data migration |
-| **Jan 2017 ÃÂ¢ÃÂÃÂ Apr 2018** | Tech Support | On-site IT support (concurrent with ERP role) |
-| **2017 ÃÂ¢ÃÂÃÂ Present** | Independent Developer | Side projects: Wash-ERP, tanzir-ai, Android apps, tooling |
+| **Jan 2023 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Present** | Wash Operation & Central Planner | Wash planning, KPI dashboards, cross-factory coordination |
+| **Mar 2015 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Dec 2022** | ERP Implementation Specialist | Zilingo/zFactory ERP rollout, floor training, data migration |
+| **Jan 2017 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Apr 2018** | Tech Support | On-site IT support (concurrent with ERP role) |
+| **2017 ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Present** | Independent Developer | Side projects: Wash-ERP, tanzir-ai, Android apps, tooling |
 
 ---
 
-## ÃÂ°ÃÂÃÂÃÂ Education
+## ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ Education
 
-- **M.Sc.** ÃÂ¢ÃÂÃÂ *(details in portfolio)*
-- **B.Sc.** ÃÂ¢ÃÂÃÂ Computer Science
-- **Diploma** ÃÂ¢ÃÂÃÂ Engineering
+- **M.Sc.** ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ *(details in portfolio)*
+- **B.Sc.** ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Computer Science
+- **Diploma** ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Engineering
 - **SSC**
 
 ---
 
-## ÃÂ°ÃÂÃÂÃÂ GitHub Stats
+## ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ GitHub Stats
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=iamtanzir&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF88&icon_color=00FF88&text_color=ffffff" width="48%" />
@@ -121,30 +121,30 @@ Outside of the day job, I build tools that scratch my own itch: a laundry ERP, a
 
 ---
 
-## ÃÂ°ÃÂÃÂÃÂ Live Projects
+## ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ Live Projects
 
 | Project | What it is | Link |
 |---------|------------|------|
-| **HACK_TUTOR** | Ethical hacking / cyber-security learning platform | [Live ÃÂ¢ÃÂÃÂ](https://hack-tutor.vercel.app) |
-| **FREE-Payment-Gateways** | Free payment-gateway integration reference | [Live ÃÂ¢ÃÂÃÂ](https://free-payment-gateways.vercel.app) |
-| **Mr.Robot** | Automation / tooling web app | [Live ÃÂ¢ÃÂÃÂ](https://mrrobot.vercel.app) |
-| **Digital Note** | Lightweight digital note-taking app | [Live ÃÂ¢ÃÂÃÂ](https://digital-note.vercel.app) |
+| **HACK_TUTOR** | Ethical hacking / cyber-security learning platform | [Live ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ](https://hack-tutor.vercel.app) |
+| **FREE-Payment-Gateways** | Free payment-gateway integration reference | [Live ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ](https://free-payment-gateways.vercel.app) |
+| **Mr.Robot** | Automation / tooling web app | [Live ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ](https://mrrobot.vercel.app) |
+| **Digital Note** | Lightweight digital note-taking app | [Live ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ](https://digital-note.vercel.app) |
 
-> ÃÂ ÃÂ¦ÃÂ²ÃÂ ÃÂ¦ÃÂ¿ÃÂ ÃÂ¦ÃÂÃÂ ÃÂ¦ÃÂÃÂ ÃÂ¦ÃÂÃÂ ÃÂ§ÃÂÃÂ ÃÂ¦ÃÂ²ÃÂ ÃÂ§ÃÂ ÃÂ ÃÂ¦ÃÂªÃÂ ÃÂ§ÃÂÃÂ ÃÂ¦ÃÂ°ÃÂ ÃÂ§ÃÂÃÂ ÃÂ¦ÃÂÃÂ ÃÂ¦ÃÂ«ÃÂ ÃÂ§ÃÂÃÂ ÃÂ¦ÃÂ²ÃÂ ÃÂ¦ÃÂ¿ÃÂ ÃÂ¦ÃÂ ÃÂ ÃÂ¦ÃÂ¸ÃÂ ÃÂ¦ÃÂ¾ÃÂ ÃÂ¦ÃÂÃÂ ÃÂ¦ÃÂ ÃÂ ÃÂ¦ÃÂ¥ÃÂ ÃÂ§ÃÂÃÂ ÃÂ¦ÃÂÃÂ ÃÂ§ÃÂ ÃÂ ÃÂ¦ÃÂ¨ÃÂ ÃÂ§ÃÂÃÂ ÃÂ¦ÃÂÃÂ ÃÂ§ÃÂÃÂ ÃÂ¦ÃÂ¾ ÃÂ¢ÃÂÃÂ ÃÂ ÃÂ¦ÃÂ¡ÃÂ ÃÂ¦ÃÂ¿ÃÂ ÃÂ¦ÃÂªÃÂ ÃÂ§ÃÂÃÂ ÃÂ¦ÃÂ²ÃÂ ÃÂ§ÃÂÃÂ ÃÂ¦ÃÂ®ÃÂ ÃÂ§ÃÂÃÂ ÃÂ¦ÃÂ¨ÃÂ ÃÂ§ÃÂÃÂ ÃÂ¦ÃÂ URL ÃÂ ÃÂ¦ÃÂ­ÃÂ ÃÂ¦ÃÂ¿ÃÂ ÃÂ¦ÃÂ¨ÃÂ ÃÂ§ÃÂÃÂ ÃÂ¦ÃÂ¨ ÃÂ ÃÂ¦ÃÂ¹ÃÂ ÃÂ¦ÃÂ²ÃÂ ÃÂ§ÃÂ ÃÂ ÃÂ¦ÃÂ¶ÃÂ ÃÂ§ÃÂÃÂ ÃÂ¦ÃÂ§ÃÂ ÃÂ¦ÃÂ°ÃÂ ÃÂ¦ÃÂ¿ÃÂ ÃÂ§ÃÂÃÂ ÃÂ§ÃÂ ÃÂ ÃÂ¦ÃÂ¨ÃÂ ÃÂ¦ÃÂ¿ÃÂ ÃÂ¦ÃÂ¨ÃÂ ÃÂ¥ÃÂ¤
+> ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ²ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¿ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ²ÃÂÃÂ ÃÂÃÂ§ÃÂÃÂ ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂªÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ°ÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ«ÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ²ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¿ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¸ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¾ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¥ÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂÃÂÃÂ ÃÂÃÂ§ÃÂÃÂ ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¨ÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¾ ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¡ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¿ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂªÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ²ÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ®ÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¨ÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ URL ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ­ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¿ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¨ÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¨ ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¹ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ²ÃÂÃÂ ÃÂÃÂ§ÃÂÃÂ ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¶ÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ§ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ°ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¿ÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ ÃÂÃÂ§ÃÂÃÂ ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¨ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¿ÃÂÃÂ ÃÂÃÂ¦ÃÂÃÂ¨ÃÂÃÂ ÃÂÃÂ¥ÃÂÃÂ¤
 
 ---
 
-## ÃÂ°ÃÂÃÂÃÂ Featured Repositories
+## ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ Featured Repositories
 
 | Project | What it is | Stack |
 |---------|------------|-------|
 | **[Wash-ERP](https://github.com/iamtanzir/Wash-ERP)** | Laundry ERP, deployed on Vercel + Turso | TypeScript |
-| **[tanzir-ai](https://github.com/iamtanzir/tanzir-ai)** | Multi-provider AI chat (Gemini, Groq, OpenRouter, OpenAI, ÃÂ¢ÃÂÃÂ¦) | JavaScript |
-| **[Parquet-Universal-Database-Bridge](https://github.com/iamtanzir/Parquet-Universal-Database-Bridge)** | Universal DB bridge for Parquet | ÃÂ¢ÃÂÃÂ |
-| **[DeepSeek-v4-1-Flash-Free](https://github.com/iamtanzir/DeepSeek-v4-1-Flash-Free)** | DeepSeek v4.1 Flash & Coder ÃÂ¢ÃÂÃÂ notes + scripts | Shell |
-| **[Cybernetic-Sentinel](https://github.com/iamtanzir/Cybernetic-Sentinel)** | Security / monitoring sentinel | ÃÂ¢ÃÂÃÂ |
-| **[KidSafe-Guardian](https://github.com/iamtanzir/KidSafe-Guardian)** | Parental-control / kids-safety tool | ÃÂ¢ÃÂÃÂ |
-| **[Reverse-Engineering-Agent-Setup](https://github.com/iamtanzir/Reverse-Engineering-Agent-Setup)** | Reverse-engineering agent harness | ÃÂ¢ÃÂÃÂ |
+| **[tanzir-ai](https://github.com/iamtanzir/tanzir-ai)** | Multi-provider AI chat (Gemini, Groq, OpenRouter, OpenAI, ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ¦) | JavaScript |
+| **[Parquet-Universal-Database-Bridge](https://github.com/iamtanzir/Parquet-Universal-Database-Bridge)** | Universal DB bridge for Parquet | ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ |
+| **[DeepSeek-v4-1-Flash-Free](https://github.com/iamtanzir/DeepSeek-v4-1-Flash-Free)** | DeepSeek v4.1 Flash & Coder ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ notes + scripts | Shell |
+| **[Cybernetic-Sentinel](https://github.com/iamtanzir/Cybernetic-Sentinel)** | Security / monitoring sentinel | ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ |
+| **[KidSafe-Guardian](https://github.com/iamtanzir/KidSafe-Guardian)** | Parental-control / kids-safety tool | ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ |
+| **[Reverse-Engineering-Agent-Setup](https://github.com/iamtanzir/Reverse-Engineering-Agent-Setup)** | Reverse-engineering agent harness | ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ |
 | **[IPS-Monitoring-System](https://github.com/iamtanzir/IPS-Monitoring-System)** | IPS / hybrid inverter / solar monitoring | Kotlin |
 | **[LFP-Battery-Calculator](https://github.com/iamtanzir/LFP-Battery-Calculator)** | LFP battery capacity & runtime calculator | Kotlin |
 | **[Pi-3B-setup-with-Earning-Apps](https://github.com/iamtanzir/Pi-3B-setup-with-Earning-Apps)** | Raspberry Pi 3B + Pi-hole + Honeygain + EarnApp | DevOps |
@@ -153,17 +153,17 @@ Outside of the day job, I build tools that scratch my own itch: a laundry ERP, a
 | **[Any-Theme-Template](https://github.com/iamtanzir/Any-Theme-Template)** | Any Theme template clone | HTML / CSS / SCSS |
 | **[nextjs-blog-theme](https://github.com/iamtanzir/nextjs-blog-theme)** | Minimal Next.js blog theme with Markdown | JavaScript |
 | **[tanzir-contributions](https://github.com/iamtanzir/tanzir-contributions)** | Contribution graph / CI helpers | GitHub Actions |
-| **[Digital-Note](https://github.com/iamtanzir/Digital-Note)** | Source for the live Digital Note app | ÃÂ¢ÃÂÃÂ |
+| **[Digital-Note](https://github.com/iamtanzir/Digital-Note)** | Source for the live Digital Note app | ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ |
 | **[SMS-Verification-Site](https://github.com/iamtanzir/SMS-Verification-Site)** | SMS verification site | Web |
 | **[tanzir.iu](https://github.com/iamtanzir/tanzir.iu)** | Personal site source | Web |
-| **[iamtanzir](https://github.com/iamtanzir/iamtanzir)** | This profile ÃÂ¢ÃÂÃÂ clock, counters, CI | GitHub Actions |
+| **[iamtanzir](https://github.com/iamtanzir/iamtanzir)** | This profile ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ clock, counters, CI | GitHub Actions |
 
 ---
 
-## ÃÂ°ÃÂÃÂÃÂ Other Repositories
+## ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ Other Repositories
 
 <details>
-<summary>ÃÂ°ÃÂÃÂÃÂ½ Click to expand ÃÂ¢ÃÂÃÂ forked / list / config repos</summary>
+<summary>ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ½ Click to expand ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ forked / list / config repos</summary>
 
 | Repository | Description |
 |------------|-------------|
@@ -179,19 +179,19 @@ Outside of the day job, I build tools that scratch my own itch: a laundry ERP, a
 
 </details>
 
-> ÃÂ°ÃÂÃÂÃÂ **[See all repositories ÃÂ¢ÃÂÃÂ](https://github.com/iamtanzir?tab=repositories)**
+> ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ **[See all repositories ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ](https://github.com/iamtanzir?tab=repositories)**
 
 ---
 
-## ÃÂ°ÃÂÃÂÃÂ Certificates
+## ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ Certificates
 
-14+ certificates across **Coursera**, **freeCodeCamp**, **Google**, and **Microsoft** ÃÂ¢ÃÂÃÂ covering data analytics, cloud, and programming.
+14+ certificates across **Coursera**, **freeCodeCamp**, **Google**, and **Microsoft** ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ covering data analytics, cloud, and programming.
 
-> ÃÂ°ÃÂÃÂÃÂ Full list: **[iamtanzir.github.io ÃÂ¢ÃÂÃÂ Certificates](https://iamtanzir.github.io/#certificates)**
+> ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ Full list: **[iamtanzir.github.io ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Certificates](https://iamtanzir.github.io/#certificates)**
 
 ---
 
-## ÃÂ¢ÃÂÃÂ Support for Buying Coffee
+## ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Support for Buying Coffee
 
 If my work has helped you, you can support me here:
 
@@ -201,7 +201,7 @@ If my work has helped you, you can support me here:
   </a>
 </p>
 
-ÃÂ¢ÃÂÃÂ **Every cup keeps the commits coming.** Thank you! ÃÂ°ÃÂÃÂÃÂ
+ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ **Every cup keeps the commits coming.** Thank you! ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ
 
 ---
 
