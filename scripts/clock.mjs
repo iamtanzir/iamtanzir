@@ -74,20 +74,30 @@ for (let i = 0; i <= 9; i++) {
 }
 
 const svg = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 110" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="480" height="120">
   <defs>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+    <!-- Glow filter used by the lit segments -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2" result="blur" />
       <feMerge>
-        <feMergeNode in="blur" />
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
+
+    <!-- Pixel-dot pattern: a dark dot in each 4x4 cell, transparent gaps -->
+    <pattern id="pixels" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#000000" fill-opacity="0.75" />
+    </pattern>
   </defs>
-  
+
+  <rect width="480" height="120" fill="#001a08" />
+
   <!-- Clock Digits -->
   ${clockGroup}
+
+  <!-- Pixel-dot layer in front of the digits -->
+  <rect x="0" y="0" width="480" height="120" fill="url(#pixels)" pointer-events="none" />
 
   <!-- AM / PM Indicator -->
   <text x="440" y="40" fill="${isPM ? '#002b0d' : '#00ff41'}" font-family="monospace" font-size="14" font-weight="bold" ${!isPM ? 'filter="url(#glow)"' : ''}>AM</text>
