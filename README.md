@@ -10,7 +10,7 @@
 
 <!-- LIVE MINI DIGITAL CLOCK -->
 <p>
-  <img src="https://live-clock.tanzir-ahmed.workers.dev/?v=1795272115846" alt="Live Dhaka Digital Clock" width="350" />
+  <img src="https://live-clock.tanzir-ahmed.workers.dev/?v=1795272175586" alt="Live Dhaka Digital Clock" width="350" />
 </p>
 
 <!-- CI STATUS -->
