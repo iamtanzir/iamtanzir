@@ -12,8 +12,10 @@
 <p><b>CS Engineer | ERP Analyst | Planner</b><br/>
 📍 Dhaka, Bangladesh (UTC+06:00) · Open to remote worldwide</p>
 
-<!-- Live BD Digital Clock (Auto-updated via GitHub Actions) -->
-<!-- CLOCK_START -->🕐 **Live Dhaka Time (UTC+06:00):** 21-Nov-2026 10:28 AM<!-- CLOCK_END -->
+<!-- LIVE DIGITAL CLOCK (Open Source SVG) -->
+<p>
+  <img src="digital-clock.svg" alt="Live Dhaka Digital Clock" />
+</p>
 
 <!-- Social & Contact Badges -->
 <p>
@@ -126,7 +128,7 @@ Outside of the day job, I build tools that scratch my own itch: a laundry ERP, a
 | **Mr.Robot** | Automation / tooling web app | [Live →](https://mrrobot.vercel.app) |
 | **Digital Note** | Lightweight digital note-taking app | [Live →](https://digital-note.vercel.app) |
 
-> লিংকগুলো পোর্টফোলিও সাইট থেকে নেওয়া — ডিপ্লয়মেন্ট URL ভিন্ন হলে শুধরিয়ে নিন।
+> লিংকগুলো পোর্টফোলিও সাইট থেকে নেওয়া — ডিপ্লয়মেন্ট URL ভিন্ন হলে শুধরিয়ে নিন।
 
 ---
 
