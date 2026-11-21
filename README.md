@@ -10,7 +10,7 @@
 
 <!-- LIVE MINI DIGITAL CLOCK -->
 <p>
-  <img src="https://live-clock.tanzir-ahmed.workers.dev/?v=1795268395724" alt="Live Dhaka Digital Clock" width="350" />
+  <img src="https://live-clock.tanzir-ahmed.workers.dev/?v=1795268455990" alt="Live Dhaka Digital Clock" width="350" />
 </p>
 
 <!-- CI STATUS -->
@@ -43,22 +43,22 @@
 
 ---
 
-## ð§âð» About Me
+## Ã°ÂÂ§ÂÃ¢ÂÂÃ°ÂÂÂ» About Me
 
-I'm a **CS Engineer | ERP Analyst | Planner** with **11+ years** in the apparel industry â bridging the factory floor and the cloud. I specialize in **ERP implementation, wash planning, and production analytics** for global buyer programs (American Eagle, H&M, Primark, Next, OVS, C&A, Jack & Jones, Tom Tailor). I've been rolling out ERP systems since **2015** and have driven **95%+ on-time delivery** across **10+ buyer programs**.
+I'm a **CS Engineer | ERP Analyst | Planner** with **11+ years** in the apparel industry Ã¢ÂÂ bridging the factory floor and the cloud. I specialize in **ERP implementation, wash planning, and production analytics** for global buyer programs (American Eagle, H&M, Primark, Next, OVS, C&A, Jack & Jones, Tom Tailor). I've been rolling out ERP systems since **2015** and have driven **95%+ on-time delivery** across **10+ buyer programs**.
 
 Outside of the day job, I build tools that scratch my own itch: a laundry ERP, a multi-provider AI chat app, Android apps for solar/inverter monitoring, and a range of DevOps side-projects. I believe in **learning by breaking things and fixing them**.
 
-- ð­ Currently working on **[Wash-ERP](https://github.com/iamtanzir/Wash-ERP)** and **[tanzir-ai](https://github.com/iamtanzir/tanzir-ai)**
-- ð± Exploring **Argo CD** and **Platform Engineering**
-- ð¬ Ask me about **ERP (Zilingo/zFactory), Advanced Excel, SQL, KPIs, Kubernetes, Terraform, CI/CD**
-- â¡ Fun fact: I run a Pi-hole + Honeygain stack on a Raspberry Pi 3B
+- Ã°ÂÂÂ­ Currently working on **[Wash-ERP](https://github.com/iamtanzir/Wash-ERP)** and **[tanzir-ai](https://github.com/iamtanzir/tanzir-ai)**
+- Ã°ÂÂÂ± Exploring **Argo CD** and **Platform Engineering**
+- Ã°ÂÂÂ¬ Ask me about **ERP (Zilingo/zFactory), Advanced Excel, SQL, KPIs, Kubernetes, Terraform, CI/CD**
+- Ã¢ÂÂ¡ Fun fact: I run a Pi-hole + Honeygain stack on a Raspberry Pi 3B
 
 ---
 
-## ð ï¸ Tech Stack
+## Ã°ÂÂÂ Ã¯Â¸Â Tech Stack
 
-**ERP Â· Analytics Â· Planning**  
+**ERP ÃÂ· Analytics ÃÂ· Planning**  
 ![ERP](https://img.shields.io/badge/ERP-Zilingo%2FzFactory-00FF88?style=for-the-badge)
 ![Excel](https://img.shields.io/badge/Advanced_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -88,27 +88,27 @@ Outside of the day job, I build tools that scratch my own itch: a laundry ERP, a
 
 ---
 
-## ð¼ Experience
+## Ã°ÂÂÂ¼ Experience
 
 | Period | Role | Focus |
 |--------|------|-------|
-| **Jan 2023 â Present** | Wash Operation & Central Planner | Wash planning, KPI dashboards, cross-factory coordination |
-| **Mar 2015 â Dec 2022** | ERP Implementation Specialist | Zilingo/zFactory ERP rollout, floor training, data migration |
-| **Jan 2017 â Apr 2018** | Tech Support | On-site IT support (concurrent with ERP role) |
-| **2017 â Present** | Independent Developer | Side projects: Wash-ERP, tanzir-ai, Android apps, tooling |
+| **Jan 2023 Ã¢ÂÂ Present** | Wash Operation & Central Planner | Wash planning, KPI dashboards, cross-factory coordination |
+| **Mar 2015 Ã¢ÂÂ Dec 2022** | ERP Implementation Specialist | Zilingo/zFactory ERP rollout, floor training, data migration |
+| **Jan 2017 Ã¢ÂÂ Apr 2018** | Tech Support | On-site IT support (concurrent with ERP role) |
+| **2017 Ã¢ÂÂ Present** | Independent Developer | Side projects: Wash-ERP, tanzir-ai, Android apps, tooling |
 
 ---
 
-## ð Education
+## Ã°ÂÂÂ Education
 
-- **M.Sc.** â *(details in portfolio)*
-- **B.Sc.** â Computer Science
-- **Diploma** â Engineering
+- **M.Sc.** Ã¢ÂÂ *(details in portfolio)*
+- **B.Sc.** Ã¢ÂÂ Computer Science
+- **Diploma** Ã¢ÂÂ Engineering
 - **SSC**
 
 ---
 
-## ð GitHub Stats
+## Ã°ÂÂÂ GitHub Stats
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=iamtanzir&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF88&icon_color=00FF88&text_color=ffffff" width="48%" />
@@ -121,30 +121,30 @@ Outside of the day job, I build tools that scratch my own itch: a laundry ERP, a
 
 ---
 
-## ð Live Projects
+## Ã°ÂÂÂ Live Projects
 
 | Project | What it is | Link |
 |---------|------------|------|
-| **HACK_TUTOR** | Ethical hacking / cyber-security learning platform | [Live â](https://hack-tutor.vercel.app) |
-| **FREE-Payment-Gateways** | Free payment-gateway integration reference | [Live â](https://free-payment-gateways.vercel.app) |
-| **Mr.Robot** | Automation / tooling web app | [Live â](https://mrrobot.vercel.app) |
-| **Digital Note** | Lightweight digital note-taking app | [Live â](https://digital-note.vercel.app) |
+| **HACK_TUTOR** | Ethical hacking / cyber-security learning platform | [Live Ã¢ÂÂ](https://hack-tutor.vercel.app) |
+| **FREE-Payment-Gateways** | Free payment-gateway integration reference | [Live Ã¢ÂÂ](https://free-payment-gateways.vercel.app) |
+| **Mr.Robot** | Automation / tooling web app | [Live Ã¢ÂÂ](https://mrrobot.vercel.app) |
+| **Digital Note** | Lightweight digital note-taking app | [Live Ã¢ÂÂ](https://digital-note.vercel.app) |
 
-> à¦²à¦¿à¦à¦à¦à§à¦²à§ à¦ªà§à¦°à§à¦à¦«à§à¦²à¦¿à¦ à¦¸à¦¾à¦à¦ à¦¥à§à¦à§ à¦¨à§à¦à§à¦¾ â à¦¡à¦¿à¦ªà§à¦²à§à¦®à§à¦¨à§à¦ URL à¦­à¦¿à¦¨à§à¦¨ à¦¹à¦²à§ à¦¶à§à¦§à¦°à¦¿à§à§ à¦¨à¦¿à¦¨à¥¤
+> Ã Â¦Â²Ã Â¦Â¿Ã Â¦ÂÃ Â¦ÂÃ Â¦ÂÃ Â§ÂÃ Â¦Â²Ã Â§Â Ã Â¦ÂªÃ Â§ÂÃ Â¦Â°Ã Â§ÂÃ Â¦ÂÃ Â¦Â«Ã Â§ÂÃ Â¦Â²Ã Â¦Â¿Ã Â¦Â Ã Â¦Â¸Ã Â¦Â¾Ã Â¦ÂÃ Â¦Â Ã Â¦Â¥Ã Â§ÂÃ Â¦ÂÃ Â§Â Ã Â¦Â¨Ã Â§ÂÃ Â¦ÂÃ Â§ÂÃ Â¦Â¾ Ã¢ÂÂ Ã Â¦Â¡Ã Â¦Â¿Ã Â¦ÂªÃ Â§ÂÃ Â¦Â²Ã Â§ÂÃ Â¦Â®Ã Â§ÂÃ Â¦Â¨Ã Â§ÂÃ Â¦Â URL Ã Â¦Â­Ã Â¦Â¿Ã Â¦Â¨Ã Â§ÂÃ Â¦Â¨ Ã Â¦Â¹Ã Â¦Â²Ã Â§Â Ã Â¦Â¶Ã Â§ÂÃ Â¦Â§Ã Â¦Â°Ã Â¦Â¿Ã Â§ÂÃ Â§Â Ã Â¦Â¨Ã Â¦Â¿Ã Â¦Â¨Ã Â¥Â¤
 
 ---
 
-## ð Featured Repositories
+## Ã°ÂÂÂ Featured Repositories
 
 | Project | What it is | Stack |
 |---------|------------|-------|
 | **[Wash-ERP](https://github.com/iamtanzir/Wash-ERP)** | Laundry ERP, deployed on Vercel + Turso | TypeScript |
-| **[tanzir-ai](https://github.com/iamtanzir/tanzir-ai)** | Multi-provider AI chat (Gemini, Groq, OpenRouter, OpenAI, â¦) | JavaScript |
-| **[Parquet-Universal-Database-Bridge](https://github.com/iamtanzir/Parquet-Universal-Database-Bridge)** | Universal DB bridge for Parquet | â |
-| **[DeepSeek-v4-1-Flash-Free](https://github.com/iamtanzir/DeepSeek-v4-1-Flash-Free)** | DeepSeek v4.1 Flash & Coder â notes + scripts | Shell |
-| **[Cybernetic-Sentinel](https://github.com/iamtanzir/Cybernetic-Sentinel)** | Security / monitoring sentinel | â |
-| **[KidSafe-Guardian](https://github.com/iamtanzir/KidSafe-Guardian)** | Parental-control / kids-safety tool | â |
-| **[Reverse-Engineering-Agent-Setup](https://github.com/iamtanzir/Reverse-Engineering-Agent-Setup)** | Reverse-engineering agent harness | â |
+| **[tanzir-ai](https://github.com/iamtanzir/tanzir-ai)** | Multi-provider AI chat (Gemini, Groq, OpenRouter, OpenAI, Ã¢ÂÂ¦) | JavaScript |
+| **[Parquet-Universal-Database-Bridge](https://github.com/iamtanzir/Parquet-Universal-Database-Bridge)** | Universal DB bridge for Parquet | Ã¢ÂÂ |
+| **[DeepSeek-v4-1-Flash-Free](https://github.com/iamtanzir/DeepSeek-v4-1-Flash-Free)** | DeepSeek v4.1 Flash & Coder Ã¢ÂÂ notes + scripts | Shell |
+| **[Cybernetic-Sentinel](https://github.com/iamtanzir/Cybernetic-Sentinel)** | Security / monitoring sentinel | Ã¢ÂÂ |
+| **[KidSafe-Guardian](https://github.com/iamtanzir/KidSafe-Guardian)** | Parental-control / kids-safety tool | Ã¢ÂÂ |
+| **[Reverse-Engineering-Agent-Setup](https://github.com/iamtanzir/Reverse-Engineering-Agent-Setup)** | Reverse-engineering agent harness | Ã¢ÂÂ |
 | **[IPS-Monitoring-System](https://github.com/iamtanzir/IPS-Monitoring-System)** | IPS / hybrid inverter / solar monitoring | Kotlin |
 | **[LFP-Battery-Calculator](https://github.com/iamtanzir/LFP-Battery-Calculator)** | LFP battery capacity & runtime calculator | Kotlin |
 | **[Pi-3B-setup-with-Earning-Apps](https://github.com/iamtanzir/Pi-3B-setup-with-Earning-Apps)** | Raspberry Pi 3B + Pi-hole + Honeygain + EarnApp | DevOps |
@@ -153,17 +153,17 @@ Outside of the day job, I build tools that scratch my own itch: a laundry ERP, a
 | **[Any-Theme-Template](https://github.com/iamtanzir/Any-Theme-Template)** | Any Theme template clone | HTML / CSS / SCSS |
 | **[nextjs-blog-theme](https://github.com/iamtanzir/nextjs-blog-theme)** | Minimal Next.js blog theme with Markdown | JavaScript |
 | **[tanzir-contributions](https://github.com/iamtanzir/tanzir-contributions)** | Contribution graph / CI helpers | GitHub Actions |
-| **[Digital-Note](https://github.com/iamtanzir/Digital-Note)** | Source for the live Digital Note app | â |
+| **[Digital-Note](https://github.com/iamtanzir/Digital-Note)** | Source for the live Digital Note app | Ã¢ÂÂ |
 | **[SMS-Verification-Site](https://github.com/iamtanzir/SMS-Verification-Site)** | SMS verification site | Web |
 | **[tanzir.iu](https://github.com/iamtanzir/tanzir.iu)** | Personal site source | Web |
-| **[iamtanzir](https://github.com/iamtanzir/iamtanzir)** | This profile â clock, counters, CI | GitHub Actions |
+| **[iamtanzir](https://github.com/iamtanzir/iamtanzir)** | This profile Ã¢ÂÂ clock, counters, CI | GitHub Actions |
 
 ---
 
-## ð Other Repositories
+## Ã°ÂÂÂ Other Repositories
 
 <details>
-<summary>ð½ Click to expand â forked / list / config repos</summary>
+<summary>Ã°ÂÂÂ½ Click to expand Ã¢ÂÂ forked / list / config repos</summary>
 
 | Repository | Description |
 |------------|-------------|
@@ -179,19 +179,19 @@ Outside of the day job, I build tools that scratch my own itch: a laundry ERP, a
 
 </details>
 
-> ð **[See all repositories â](https://github.com/iamtanzir?tab=repositories)**
+> Ã°ÂÂÂ **[See all repositories Ã¢ÂÂ](https://github.com/iamtanzir?tab=repositories)**
 
 ---
 
-## ð Certificates
+## Ã°ÂÂÂ Certificates
 
-14+ certificates across **Coursera**, **freeCodeCamp**, **Google**, and **Microsoft** â covering data analytics, cloud, and programming.
+14+ certificates across **Coursera**, **freeCodeCamp**, **Google**, and **Microsoft** Ã¢ÂÂ covering data analytics, cloud, and programming.
 
-> ð Full list: **[iamtanzir.github.io â Certificates](https://iamtanzir.github.io/#certificates)**
+> Ã°ÂÂÂ Full list: **[iamtanzir.github.io Ã¢ÂÂ Certificates](https://iamtanzir.github.io/#certificates)**
 
 ---
 
-## â Support for Buying Coffee
+## Ã¢ÂÂ Support for Buying Coffee
 
 If my work has helped you, you can support me here:
 
@@ -201,7 +201,7 @@ If my work has helped you, you can support me here:
   </a>
 </p>
 
-â **Every cup keeps the commits coming.** Thank you! ð
+Ã¢ÂÂ **Every cup keeps the commits coming.** Thank you! Ã°ÂÂÂ
 
 ---
 
