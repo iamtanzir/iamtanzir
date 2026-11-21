@@ -20,6 +20,9 @@ const SLOT_X = [10, 70, 160, 220, 310, 370];
 
 addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
+  // Backup for the cron trigger: each image fetch revalidates the README
+  // cache-buster. The 30s guard in bumpReadmeCacheBuster prevents a loop.
+  event.waitUntil(bumpReadmeCacheBuster());
   // GitHub's camo proxy caches images by URL. Redirect to a unique URL per
   // request so camo can never serve a stale cached frame.
   if (url.pathname === "/") {
@@ -55,16 +58,23 @@ async function bumpReadmeCacheBuster() {
     const res = await fetch(api, { headers });
     if (!res.ok) return;
     const data = await res.json();
-    const md = atob(data.content.replace(/\s/g, ""));
+    const bin = atob(data.content.replace(/\s/g, ""));
+    const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
+    const md = new TextDecoder().decode(bytes);
+    const prev = md.match(/\?v=(\d+)/);
+    if (prev && Date.now() - Number(prev[1]) < 30000) return;
     const next = "?v=" + Date.now();
     const updated = md.replace(/\?v=\d+/g, next);
     if (updated === md) return;
+    const outBytes = new TextEncoder().encode(updated);
+    let outBin = "";
+    for (const b of outBytes) outBin += String.fromCharCode(b);
     await fetch(api, {
       method: "PUT",
       headers: Object.assign({}, headers, { "Content-Type": "application/json" }),
       body: JSON.stringify({
         message: "🕐 Refresh live clock [skip ci]",
-        content: btoa(unescape(encodeURIComponent(updated))),
+        content: btoa(outBin),
         sha: data.sha,
         branch: "main",
       }),
