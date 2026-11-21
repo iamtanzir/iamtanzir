@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 150" width="100%">
+  <defs>
+    <!-- Line 1 Animation (Green) -->
+    <clipPath id="clip1">
+      <rect x="0" y="0" height="150" width="0">
+        <animate attributeName="width" values="0;800;800;0;0" keyTimes="0;0.166;0.291;0.333;1" dur="12s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+    
+    <!-- Line 2 Animation (Red) -->
+    <clipPath id="clip2">
+      <rect x="0" y="0" height="150" width="0">
+        <animate attributeName="width" values="0;0;800;800;0;0" keyTimes="0;0.333;0.5;0.625;0.666;1" dur="12s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+    
+    <!-- Line 3 Animation (Blue) -->
+    <clipPath id="clip3">
+      <rect x="0" y="0" height="150" width="0">
+        <animate attributeName="width" values="0;0;800;800;0;0" keyTimes="0;0.666;0.833;0.958;0.999;1" dur="12s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+  </defs>
+  
+  <!-- Text Elements -->
+  <!-- Fira Code Font & Size 32 for Big Font -->
+  <g clip-path="url(#clip1)">
+    <text x="50%" y="40" font-family="'Fira Code', monospace" font-weight="bold" font-size="32" text-anchor="middle" fill="#00FF88">CS Engineer | ERP Analyst | Planner</text>
+  </g>
+  
+  <g clip-path="url(#clip2)">
+    <text x="50%" y="85" font-family="'Fira Code', monospace" font-weight="bold" font-size="32" text-anchor="middle" fill="#FF4444">Cloud | Kubernetes | CI/CD</text>
+  </g>
+  
+  <g clip-path="url(#clip3)">
+    <text x="50%" y="130" font-family="'Fira Code', monospace" font-weight="bold" font-size="32" text-anchor="middle" fill="#3B82F6">11+ Years in Apparel ERP</text>
+  </g>
+</svg>
