@@ -1,23 +1,14 @@
-import { DigitalSvgClock } from 'digital-svg-clock';
-import fs from 'fs';
+import { execFileSync } from "node:child_process";
+import fs from "node:fs";
+import path from "node:path";
 
-// ঢাকার বর্তমান সময় বের করা (UTC+6)
-const now = new Date();
-const dhakaTime = new Date(now.getTime() + (6 * 60 * 60 * 1000));
+// assets ফোল্ডার না থাকলে তৈরি করা
+const assetsDir = path.join(process.cwd(), 'assets');
+if (!fs.existsSync(assetsDir)) {
+    fs.mkdirSync(assetsDir, { recursive: true });
+}
 
-// ঘড়ি তৈরি
-const clock = new DigitalSvgClock({
-  clockFormat: "24h",
-  startTime: dhakaTime,
-  textColor: "#00FF88",
-  textFontSize: 60,
-  textFontFamily: "'Courier New', Courier, monospace",
-  textFontWeight: "bold",
-  useJavascript: false,
-  width: 300,
-  height: 100
-});
-
-const svg = clock.render();
-fs.writeFileSync('digital-clock.svg', svg);
-console.log('✅ Digital Clock SVG generated successfully!');
+// clock.mjs থেকে SVG জেনারেট করে assets/bd-clock.svg ফাইলে সেভ করা
+const svg = execFileSync(process.execPath, ["scripts/clock.mjs"], { encoding: "utf8" });
+fs.writeFileSync(path.join(assetsDir, "bd-clock.svg"), svg);
+console.log("✅ Mini Digital Clock SVG generated successfully at assets/bd-clock.svg!");
