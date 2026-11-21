@@ -13,6 +13,12 @@
   <img src="assets/bd-clock.svg" alt="Live Dhaka Digital Clock" width="350" />
 </p>
 
+<!-- CI STATUS -->
+<p align="center">
+  <a href="https://github.com/iamtanzir/iamtanzir/actions/workflows/clock.yml"><img src="https://github.com/iamtanzir/iamtanzir/actions/workflows/clock.yml/badge.svg" alt="Clock CI" /></a>
+  <a href="https://github.com/iamtanzir/iamtanzir/actions/workflows/update-metrics.yml"><img src="https://github.com/iamtanzir/iamtanzir/actions/workflows/update-metrics.yml/badge.svg" alt="Metrics CI" /></a>
+</p>
+
 <!-- Social & Contact Badges -->
 <p>
   <a href="https://github.com/iamtanzir"><img src="https://img.shields.io/badge/GitHub-iamtanzir-181717?style=for-the-badge&logo=github" alt="GitHub"></a>
