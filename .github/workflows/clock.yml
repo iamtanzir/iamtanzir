@@ -1,6 +1,8 @@
 name: Update Mini Clock SVG
 
 on:
+  push:
+    branches: [main]
   schedule:
     - cron: '*/15 * * * *' # প্রতি ১৫ মিনিটে আপডেট হবে
   workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
@@ -10,6 +12,7 @@ permissions:
 
 jobs:
   update-clock:
+    if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
