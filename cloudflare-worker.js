@@ -19,6 +19,13 @@ const ON = "#00ff41", OFF = "#002b0d";
 const SLOT_X = [10, 70, 160, 220, 310, 370];
 
 addEventListener("fetch", (event) => {
+  const url = new URL(event.request.url);
+  // GitHub's camo proxy caches images by URL. Redirect to a unique URL per
+  // request so camo can never serve a stale cached frame.
+  if (url.pathname === "/") {
+    event.respondWith(Response.redirect("https://live-clock.tanzir-ahmed.workers.dev/t/" + Date.now(), 302));
+    return;
+  }
   event.respondWith(renderClock());
 });
 
