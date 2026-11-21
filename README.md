@@ -13,6 +13,10 @@
   <img src="assets/bd-clock.svg" alt="Live Dhaka Digital Clock" width="350" />
 </p>
 
+<!-- LIVE EMBEDDED CLOCK (Time Atlas World) -->
+<iframe src="https://timeatlasworld.com/embed?city=dhaka" width="200" height="110" style="border:0;max-width:100%" title="Current time in Dhaka" loading="lazy"></iframe>
+<p style="margin:4px 0 0;font:12px Arial,sans-serif">Clock by <a href="https://timeatlasworld.com/meeting-planner">Time Atlas World</a></p>
+
 <!-- CI STATUS -->
 <p align="center">
   <a href="https://github.com/iamtanzir/iamtanzir/actions/workflows/clock.yml"><img src="https://github.com/iamtanzir/iamtanzir/actions/workflows/clock.yml/badge.svg" alt="Clock CI" /></a>
