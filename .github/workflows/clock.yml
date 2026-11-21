@@ -1,0 +1,34 @@
+name: Update Digital Clock SVG
+
+on:
+  schedule:
+    - cron: '0 * * * *' # প্রতি ১ ঘণ্টায় আপডেট হবে (SMIL অ্যানিমেশনের ড্রিফট ঠিক করতে)
+  workflow_dispatch: # ম্যানুয়ালি রান করার অপশন
+
+permissions:
+  contents: write
+
+jobs:
+  update-clock:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies and Generate Clock
+        run: |
+          npm install
+          npm run build
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add digital-clock.svg
+          git commit -m "🕐 Auto-update Live Digital Clock" || exit 0
+          git push
