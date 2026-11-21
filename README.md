@@ -14,7 +14,7 @@
 
 <!-- LIVE DIGITAL CLOCK (SMIL Animated SVG) -->
 <p>
-  <img src="digital-clock.svg" alt="Live Dhaka Digital Clock" width="300" />
+  <img src="assets/bd-clock.svg" alt="Live Dhaka Digital Clock" width="300" />
 </p>
 
 <!-- Social & Contact Badges -->
