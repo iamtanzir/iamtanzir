@@ -11,6 +11,14 @@ const isPM = hours >= 12;
 // 12-ঘণ্টা ফরম্যাটে রূপান্তর
 hours = hours % 12 || 12;
 
+const days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
+const months = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
+
+const dayName = days[dhakaTime.getDay()];
+const dateStr = String(dhakaTime.getDate()).padStart(2, '0');
+const monthName = months[dhakaTime.getMonth()];
+const year = dhakaTime.getFullYear();
+
 // ৭-সেগমেন্ট ডিজিটের পয়েন্ট
 const segs = {
   A: "12,6 48,6 42,12 18,12",
@@ -58,31 +66,29 @@ const m2 = minutes % 10;
 const s1 = Math.floor(seconds / 10);
 const s2 = seconds % 10;
 
-// Y-অক্ষ (উচ্চতা) ৮০ থেকে কমিয়ে ২০ করা হয়েছে যাতে এটি মিনি দেখায়
+// মিনি লেআউট (600x160 সাইজ)
 let clockGroup = '';
-clockGroup += getDigitSVG(h1, 100, 20);
-clockGroup += getDigitSVG(h2, 180, 20);
-clockGroup += `<circle cx="260" cy="40" r="6" fill="#00ff41" filter="url(#glow)"/>`;
-clockGroup += `<circle cx="260" cy="80" r="6" fill="#00ff41" filter="url(#glow)"/>`;
-clockGroup += getDigitSVG(m1, 300, 20);
-clockGroup += getDigitSVG(m2, 380, 20);
-clockGroup += `<circle cx="460" cy="40" r="6" fill="#00ff41" filter="url(#glow)"/>`;
-clockGroup += `<circle cx="460" cy="80" r="6" fill="#00ff41" filter="url(#glow)"/>`;
+clockGroup += getDigitSVG(h1, 80, 30);
+clockGroup += getDigitSVG(h2, 140, 30);
+clockGroup += `<circle cx="205" cy="55" r="5" fill="#00ff41" filter="url(#glow)"/>`;
+clockGroup += `<circle cx="205" cy="95" r="5" fill="#00ff41" filter="url(#glow)"/>`;
+clockGroup += getDigitSVG(m1, 230, 30);
+clockGroup += getDigitSVG(m2, 290, 30);
+clockGroup += `<circle cx="355" cy="55" r="5" fill="#00ff41" filter="url(#glow)"/>`;
+clockGroup += `<circle cx="355" cy="95" r="5" fill="#00ff41" filter="url(#glow)"/>`;
 
-// সেকেন্ডের জন্য SMIL অ্যানিমেশন
 for (let i = 0; i <= 5; i++) {
-  clockGroup += getDigitSVG(i, 500, 20, true, '60s', seconds);
+  clockGroup += getDigitSVG(i, 380, 30, true, '60s', seconds);
 }
 for (let i = 0; i <= 9; i++) {
-  clockGroup += getDigitSVG(i, 580, 20, true, '10s', seconds);
+  clockGroup += getDigitSVG(i, 440, 30, true, '10s', seconds);
 }
 
-// ব্যাকগ্রাউন্ড এবং বর্ডার ছাড়া শুধুমাত্র SVG
 const svg = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 120" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="100%" height="100%">
   <defs>
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feGaussianBlur stdDeviation="2" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="blur" />
@@ -91,12 +97,26 @@ const svg = `
     </filter>
   </defs>
   
+  <!-- Background and Border -->
+  <rect width="100%" height="100%" fill="#050505" rx="10" />
+  <rect x="5" y="5" width="590" height="150" rx="8" fill="none" stroke="#00ff41" stroke-width="1.5" opacity="0.8" />
+  
+  <!-- Top Header -->
+  <text x="20" y="25" fill="#00ff41" font-family="monospace" font-size="11" letter-spacing="2" opacity="0.8">ASIA / DHAKA</text>
+  <circle cx="440" cy="21" r="3" fill="#00ff41" filter="url(#glow)" />
+  <text x="450" y="25" fill="#00ff41" font-family="monospace" font-size="11" letter-spacing="2" opacity="0.8">LIVE FEED</text>
+  <text x="520" y="25" fill="#00ff41" font-family="monospace" font-size="11" letter-spacing="2" opacity="0.6">UTC+06:00</text>
+
   <!-- Clock Digits -->
   ${clockGroup}
 
   <!-- AM / PM Indicator -->
-  <text x="680" y="55" fill="${isPM ? '#002b0d' : '#00ff41'}" font-family="monospace" font-size="16" font-weight="bold" ${!isPM ? 'filter="url(#glow)"' : ''}>AM</text>
-  <text x="680" y="95" fill="${isPM ? '#00ff41' : '#002b0d'}" font-family="monospace" font-size="16" font-weight="bold" ${isPM ? 'filter="url(#glow)"' : ''}>PM</text>
+  <text x="505" y="60" fill="${isPM ? '#002b0d' : '#00ff41'}" font-family="monospace" font-size="14" font-weight="bold" ${!isPM ? 'filter="url(#glow)"' : ''}>AM</text>
+  <text x="505" y="95" fill="${isPM ? '#00ff41' : '#002b0d'}" font-family="monospace" font-size="14" font-weight="bold" ${isPM ? 'filter="url(#glow)"' : ''}>PM</text>
+
+  <!-- Date -->
+  <text x="300" y="145" text-anchor="middle" fill="#00ff41" font-family="monospace" font-size="12" letter-spacing="3" opacity="0.9">${dayName} - ${dateStr} ${monthName} ${year}</text>
+
 </svg>
 `;
 
