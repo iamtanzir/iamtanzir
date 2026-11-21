@@ -12,9 +12,9 @@
 <p><b>CS Engineer | ERP Analyst | Planner</b><br/>
 📍 Dhaka, Bangladesh (UTC+06:00) · Open to remote worldwide</p>
 
-<!-- LIVE DIGITAL CLOCK (SMIL Animated SVG) -->
+<!-- LIVE MINI DIGITAL CLOCK (SMIL Animated SVG) -->
 <p>
-  <img src="assets/bd-clock.svg" alt="Live Dhaka Digital Clock" width="300" />
+  <img src="assets/bd-clock.svg" alt="Live Dhaka Digital Clock" width="420" />
 </p>
 
 <!-- Social & Contact Badges -->
