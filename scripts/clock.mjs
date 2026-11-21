@@ -45,9 +45,10 @@ const seqs = [
 const clockGroup = SLOT_X.map((x, i) => {
   const { seq, dur, phase } = seqs[i];
   const n = seq.length;
-  const keyTimes = Array.from({ length: n }, (_, k) => (k / n).toFixed(6)).join(";");
+  const keyTimes = Array.from({ length: n + 1 }, (_, k) => (k / n).toFixed(6)).join(";");
   const polys = Object.entries(SEGMENTS).map(([key, points]) => {
-    const values = seq.map((d) => (DIGITS[d].includes(key) ? "1" : "0")).join(";");
+    const flags = seq.map((d) => (DIGITS[d].includes(key) ? "1" : "0"));
+    const values = flags.concat(flags[flags.length - 1]).join(";");
     return `<polygon points="${points}" fill="${OFF}"/>` +
       `<polygon points="${points}" fill="${ON}" filter="url(#glow)">` +
       `<animate attributeName="opacity" values="${values}" keyTimes="${keyTimes}" dur="${dur}s" begin="-${phase.toFixed(2)}s" calcMode="discrete" repeatCount="indefinite"/>` +
