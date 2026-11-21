@@ -1,6 +1,9 @@
-// Cloudflare Worker: live Dhaka clock SVG (exact seven-segment design)
-// Deploy: wrangler deploy, then set README img src to the worker URL.
-// Example URL: https://live-clock.<your-subdomain>.workers.dev
+// Cloudflare Worker: live Dhaka clock SVG (exact SMIL seven-segment design)
+// Each request renders the current time from time.now API into the same SMIL
+// clock style you use in assets/bd-clock.svg, so the time is always live.
+//
+// Deploy: wrangler deploy cloudflare-worker.js --name live-clock
+// Then set README img src to: https://live-clock.<your-subdomain>.workers.dev
 
 const SEGMENTS = {
   a: "12,6 48,6 42,12 18,12",
@@ -31,15 +34,29 @@ export default {
       h24 = t.getUTCHours(); minute = t.getUTCMinutes(); second = t.getUTCSeconds();
     }
     const isPM = h24 >= 12;
-    h24 = h24 % 12 || 12;
-    const pad = (n) => String(n).padStart(2, "0");
-    const digits = (pad(h24) + pad(minute) + pad(second)).split("").map(Number);
+    const h12 = ((h24 + 11) % 12) + 1;
+
+    const sub = minute * 60 + second;
+    const slots = [
+      { seq: Array.from({ length: 12 }, (_, i) => Math.floor(((i + 1) / 10) % 10)), dur: 43200, phase: (h12 - 1) * 3600 + sub },
+      { seq: Array.from({ length: 12 }, (_, i) => (i + 1) % 10), dur: 43200, phase: (h12 - 1) * 3600 + sub },
+      { seq: [0, 1, 2, 3, 4, 5], dur: 3600, phase: sub },
+      { seq: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], dur: 600, phase: (minute % 10) * 60 + second },
+      { seq: [0, 1, 2, 3, 4, 5], dur: 60, phase: second },
+      { seq: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], dur: 10, phase: second },
+    ];
 
     const clockGroup = SLOT_X.map((x, i) => {
-      const lit = DIGITS[digits[i]];
+      const { seq, dur, phase } = slots[i];
+      const n = seq.length;
+      const keyTimes = Array.from({ length: n + 1 }, (_, k) => (k / n).toFixed(6)).join(";");
       const polys = Object.entries(SEGMENTS).map(([key, points]) => {
-        const on = lit.includes(key);
-        return `<polygon points="${points}" fill="${on ? ON : OFF}"${on ? ' filter="url(#glow)"' : ""} />`;
+        const flags = seq.map((d) => (DIGITS[d].includes(key) ? "1" : "0"));
+        const values = flags.concat(flags[flags.length - 1]).join(";");
+        return `<polygon points="${points}" fill="${OFF}"/>` +
+          `<polygon points="${points}" fill="${ON}" filter="url(#glow)">` +
+          `<animate attributeName="opacity" values="${values}" keyTimes="${keyTimes}" dur="${dur}s" begin="-${phase.toFixed(2)}s" calcMode="discrete" repeatCount="indefinite"/>` +
+          `</polygon>`;
       }).join("");
       return `<g transform="translate(${x}, 10)">${polys}</g>`;
     }).join("");
