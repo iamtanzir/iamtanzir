@@ -35,7 +35,7 @@ function getDigitSVG(num, x, y, isAnimating = false, animType = '', beginTime = 
   svg += `</g>`;
   
   if (isAnimating) {
-    let anim = `<animate attributeName="opacity" dur="${animType}" repeatCount="indefinite" begin="-${beginTime}s" values="`;
+    let anim = `<animate attributeName="opacity" dur="${animType}" repeatCount="indefinite" begin="-${beginTime}s" calcMode="discrete" values="`;
     if (animType === '10s') {
       anim += Array.from({length: 10}, (_, i) => i === num ? '1' : '0').join(';');
       anim += `" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9" />`;
