@@ -2,7 +2,7 @@ name: Update Digital Clock SVG
 
 on:
   schedule:
-    - cron: '*/15 * * * *' # প্রতি ১৫ মিনিটে আপডেট হবে (SMIL অ্যানিমেশন লাইভ টিকিং হ্যান্ডেল করবে)
+    - cron: '*/15 * * * *' # প্রতি ১৫ মিনিটে আপডেট হবে
   workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
 
 permissions:
