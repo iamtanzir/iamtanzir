@@ -3,7 +3,7 @@
 <!-- Animated Header -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF88,100:0066FF&height=200&section=header&text=AKM%20Tanzir%20Ahmed&fontSize=70&fontAlignY=35&animation=fadeIn&fontColor=ffffff" width="100%" />
 
-<!-- Custom RGB Sequential Typing Animation -->
+<!-- Custom RGB Sequential Typing Animation (Same Line) -->
 <p align="center">
   <img src="assets/rgb-typing.svg" alt="Sequential RGB Typing Animation" width="800" />
 </p>
