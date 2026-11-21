@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 /**
  * Self-ticking seven-segment Dhaka clock for the profile README.
- *
- * Every segment carries its own SMIL opacity animation, so the SVG keeps
- * ticking while the image is on screen. GitHub Actions regenerates it every
- * 5 minutes to keep hours/minutes/AM-PM anchored to the real time.
+ * SMIL animations start at t=0 with values rotated to the current time, so
+ * GitHub's image proxy renders a live ticking clock. CI regenerates every
+ * 5 minutes to keep hours/minutes/AM-PM anchored to real time.
  */
 const now = new Date();
 const dhaka = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Dhaka" }));
@@ -32,26 +31,28 @@ const ON = "#00ff41";
 const OFF = "#002b0d";
 const SLOT_X = [10, 70, 160, 220, 310, 370];
 
-const sub = minute * 60 + second;
-const seqs = [
-  { seq: Array.from({ length: 12 }, (_, i) => Math.floor(((i + 1) / 10) % 10)), dur: 43200, phase: (h12 - 1) * 3600 + sub },
-  { seq: Array.from({ length: 12 }, (_, i) => (i + 1) % 10), dur: 43200, phase: (h12 - 1) * 3600 + sub },
-  { seq: [0, 1, 2, 3, 4, 5], dur: 3600, phase: sub },
-  { seq: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], dur: 600, phase: (minute % 10) * 60 + second },
-  { seq: [0, 1, 2, 3, 4, 5], dur: 60, phase: second },
-  { seq: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], dur: 10, phase: second },
+const hoursSeq = Array.from({ length: 12 }, (_, i) => (i + 1) % 10);
+const hoursTensSeq = Array.from({ length: 12 }, (_, i) => Math.floor((i + 1) / 10));
+const slots = [
+  { seq: hoursTensSeq, dur: 43200, pos: h12 - 1 },
+  { seq: hoursSeq,     dur: 43200, pos: h12 - 1 },
+  { seq: [0, 1, 2, 3, 4, 5], dur: 3600, pos: minute },
+  { seq: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], dur: 600, pos: minute % 10 },
+  { seq: [0, 1, 2, 3, 4, 5], dur: 60, pos: Math.floor(second / 10) },
+  { seq: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], dur: 10, pos: second % 10 },
 ];
 
 const clockGroup = SLOT_X.map((x, i) => {
-  const { seq, dur, phase } = seqs[i];
+  const { seq, dur, pos } = slots[i];
   const n = seq.length;
+  const rotated = Array.from({ length: n }, (_, k) => seq[(pos + k) % n]);
   const keyTimes = Array.from({ length: n + 1 }, (_, k) => (k / n).toFixed(6)).join(";");
   const polys = Object.entries(SEGMENTS).map(([key, points]) => {
-    const flags = seq.map((d) => (DIGITS[d].includes(key) ? "1" : "0"));
+    const flags = rotated.map((d) => (DIGITS[d].includes(key) ? "1" : "0"));
     const values = flags.concat(flags[flags.length - 1]).join(";");
     return `<polygon points="${points}" fill="${OFF}"/>` +
       `<polygon points="${points}" fill="${ON}" filter="url(#glow)">` +
-      `<animate attributeName="opacity" values="${values}" keyTimes="${keyTimes}" dur="${dur}s" begin="-${phase.toFixed(2)}s" calcMode="discrete" repeatCount="indefinite"/>` +
+      `<animate attributeName="opacity" values="${values}" keyTimes="${keyTimes}" dur="${dur}s" calcMode="discrete" repeatCount="indefinite"/>` +
       `</polygon>`;
   }).join("");
   return `<g transform="translate(${x}, 10)">${polys}</g>`;
