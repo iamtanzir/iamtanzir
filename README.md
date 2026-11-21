@@ -13,9 +13,6 @@
   <img src="assets/bd-clock.svg" alt="Live Dhaka Digital Clock" width="350" />
 </p>
 
-<!-- LIVE CLOCK LINK (GitHub strips <iframe>, so use a link) -->
-<p style="margin:4px 0 0;font:12px Arial,sans-serif">Live Dhaka time: <a href="https://timeatlasworld.com/embed?city=dhaka">Time Atlas World →</a></p>
-
 <!-- CI STATUS -->
 <p align="center">
   <a href="https://github.com/iamtanzir/iamtanzir/actions/workflows/clock.yml"><img src="https://github.com/iamtanzir/iamtanzir/actions/workflows/clock.yml/badge.svg" alt="Clock CI" /></a>
