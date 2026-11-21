@@ -1,82 +1,54 @@
-// scripts/clock.mjs
+#!/usr/bin/env node
+/**
+ * Static seven-segment Dhaka clock for the profile README.
+ *
+ * GitHub serves README SVGs through an image proxy that does not run SMIL,
+ * so the SVG must contain the correct digits at generation time. The
+ * GitHub Actions workflow regenerates it every 5 minutes to keep it fresh.
+ */
 const now = new Date();
-const dhakaTime = new Date(now.toLocaleString("en-US", {timeZone: "Asia/Dhaka"}));
+const dhaka = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Dhaka" }));
 
-let hours = dhakaTime.getHours();
-const minutes = dhakaTime.getMinutes();
-const seconds = dhakaTime.getSeconds();
+let hours = dhaka.getHours();
+const minutes = dhaka.getMinutes();
+const seconds = dhaka.getSeconds();
 const isPM = hours >= 12;
-
 hours = hours % 12 || 12;
 
-const segs = {
-  A: "12,6 48,6 42,12 18,12",
-  B: "48,6 54,12 54,48 48,54 42,48 42,12",
-  C: "54,54 54,90 48,96 42,90 42,54 48,48",
-  D: "18,96 42,96 48,90 42,84 18,84 12,90",
-  E: "6,54 12,48 18,54 18,90 12,96 6,90",
-  F: "6,12 12,6 18,12 18,48 12,54 6,48",
-  G: "18,48 42,48 48,54 42,60 18,60 12,54"
+const pad = (n) => String(n).padStart(2, "0");
+const digits = (pad(hours) + pad(minutes) + pad(seconds)).split("").map(Number);
+
+const SEGMENTS = {
+  a: "12,6 48,6 42,12 18,12",
+  b: "48,6 54,12 54,48 48,54 42,48 42,12",
+  c: "54,54 54,90 48,96 42,90 42,54 48,48",
+  d: "18,96 42,96 48,90 42,84 18,84 12,90",
+  e: "6,54 12,48 18,54 18,90 12,96 6,90",
+  f: "6,12 12,6 18,12 18,48 12,54 6,48",
+  g: "18,48 42,48 48,54 42,60 18,60 12,54",
 };
-
-const activeSegs = {
-  0: ['A','B','C','D','E','F'], 1: ['B','C'], 2: ['A','B','G','E','D'],
-  3: ['A','B','G','C','D'], 4: ['F','G','B','C'], 5: ['A','F','G','C','D'],
-  6: ['A','F','G','E','C','D'], 7: ['A','B','C'], 8: ['A','B','C','D','E','F','G'], 9: ['A','B','C','D','F','G']
+const DIGITS = {
+  0: "abcdef", 1: "bc", 2: "abged", 3: "abgcd", 4: "fgbc",
+  5: "afgcd", 6: "afgecd", 7: "abc", 8: "abcdefg", 9: "abcdfg",
 };
+const ON = "#00ff41";
+const OFF = "#002b0d";
+const SLOT_X = [10, 70, 160, 220, 310, 370];
 
-function getDigitSVG(num, x, y, isAnimating = false, animType = '', beginTime = 0) {
-  let svg = `<g transform="translate(${x}, ${y})">`;
-  for (const [key, points] of Object.entries(segs)) {
-    const isActive = activeSegs[num].includes(key);
-    const color = isActive ? "#00ff41" : "#002b0d"; // সবুজ এবং ডার্ক গ্রিন (অফ)
-    svg += `<polygon points="${points}" fill="${color}" ${isActive ? 'filter="url(#glow)"' : ''} />`;
-  }
-  svg += `</g>`;
-  
-  if (isAnimating) {
-    let anim = `<animate attributeName="opacity" dur="${animType}" repeatCount="indefinite" begin="-${beginTime}s" calcMode="discrete" values="`;
-    if (animType === '10s') {
-      anim += Array.from({length: 10}, (_, i) => i === num ? '1' : '0').join(';');
-      anim += `" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9" />`;
-    } else if (animType === '60s') {
-      anim += Array.from({length: 6}, (_, i) => i === num ? '1' : '0').join(';');
-      anim += `" keyTimes="0;0.166;0.333;0.5;0.666;0.833" />`;
-    }
-    svg = svg.replace('<g ', `<g `).replace('</g>', `${anim}</g>`);
-  }
-  return svg;
-}
-
-const h1 = Math.floor(hours / 10);
-const h2 = hours % 10;
-const m1 = Math.floor(minutes / 10);
-const m2 = minutes % 10;
-const s1 = Math.floor(seconds / 10);
-const s2 = seconds % 10;
-
-// নতুন স্পেসিং (শুধু ডিজিট)
-let clockGroup = '';
-clockGroup += getDigitSVG(h1, 10, 10);
-clockGroup += getDigitSVG(h2, 70, 10);
-clockGroup += `<circle cx="135" cy="35" r="5" fill="#00ff41" filter="url(#glow)"/>`;
-clockGroup += `<circle cx="135" cy="75" r="5" fill="#00ff41" filter="url(#glow)"/>`;
-clockGroup += getDigitSVG(m1, 160, 10);
-clockGroup += getDigitSVG(m2, 220, 10);
-clockGroup += `<circle cx="285" cy="35" r="5" fill="#00ff41" filter="url(#glow)"/>`;
-clockGroup += `<circle cx="285" cy="75" r="5" fill="#00ff41" filter="url(#glow)"/>`;
-
-for (let i = 0; i <= 5; i++) {
-  clockGroup += getDigitSVG(i, 310, 10, true, '60s', seconds);
-}
-for (let i = 0; i <= 9; i++) {
-  clockGroup += getDigitSVG(i, 370, 10, true, '10s', seconds);
-}
+const clockGroup = SLOT_X.map((x, i) => {
+  const lit = DIGITS[digits[i]];
+  const polys = Object.entries(SEGMENTS)
+    .map(([key, points]) => {
+      const on = lit.includes(key);
+      return `<polygon points="${points}" fill="${on ? ON : OFF}"${on ? ' filter="url(#glow)"' : ""} />`;
+    })
+    .join("");
+  return `<g transform="translate(${x}, 10)">${polys}</g>`;
+}).join("");
 
 const svg = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="480" height="120">
   <defs>
-    <!-- Glow filter used by the lit segments -->
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2" result="blur" />
       <feMerge>
@@ -84,8 +56,6 @@ const svg = `
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
-
-    <!-- Pixel-dot pattern: a dark dot in each 4x4 cell, transparent gaps -->
     <pattern id="pixels" width="4" height="4" patternUnits="userSpaceOnUse">
       <circle cx="2" cy="2" r="1.2" fill="#000000" fill-opacity="0.75" />
     </pattern>
@@ -93,15 +63,19 @@ const svg = `
 
   <rect width="480" height="120" fill="#001a08" />
 
-  <!-- Clock Digits -->
+  <!-- Colon dots -->
+  <circle cx="135" cy="35" r="5" fill="${ON}" filter="url(#glow)" />
+  <circle cx="135" cy="75" r="5" fill="${ON}" filter="url(#glow)" />
+  <circle cx="285" cy="35" r="5" fill="${ON}" filter="url(#glow)" />
+  <circle cx="285" cy="75" r="5" fill="${ON}" filter="url(#glow)" />
+
   ${clockGroup}
 
   <!-- Pixel-dot layer in front of the digits -->
-  <rect x="0" y="0" width="480" height="120" fill="url(#pixels)" pointer-events="none" />
+  <rect width="480" height="120" fill="url(#pixels)" pointer-events="none" />
 
-  <!-- AM / PM Indicator -->
-  <text x="440" y="40" fill="${isPM ? '#002b0d' : '#00ff41'}" font-family="monospace" font-size="14" font-weight="bold" ${!isPM ? 'filter="url(#glow)"' : ''}>AM</text>
-  <text x="440" y="75" fill="${isPM ? '#00ff41' : '#002b0d'}" font-family="monospace" font-size="14" font-weight="bold" ${isPM ? 'filter="url(#glow)"' : ''}>PM</text>
+  <text x="440" y="40" fill="${isPM ? OFF : ON}" font-family="monospace" font-size="14" font-weight="bold"${!isPM ? ' filter="url(#glow)"' : ""}>AM</text>
+  <text x="440" y="75" fill="${isPM ? ON : OFF}" font-family="monospace" font-size="14" font-weight="bold"${isPM ? ' filter="url(#glow)"' : ""}>PM</text>
 </svg>
 `;
 

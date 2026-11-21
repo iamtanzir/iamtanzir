@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '*/15 * * * *' # প্রতি ১৫ মিনিটে আপডেট হবে
+    - cron: '*/5 * * * *' # refresh every 5 minutes (GitHub Actions minimum)
   workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
 
 permissions:
