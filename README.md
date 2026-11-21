@@ -13,6 +13,8 @@
   <img src="assets/bd-clock.svg" alt="Live Dhaka Digital Clock" width="350" />
 </p>
 
+<iframe src="https://gclocks.com/embed/online-clock/?lang=en#lang=en&type=0&w=320&h=140&font=f2&bg1=1c1917&bg2=292524&color=fafaf9&txtcolor=a8a29e&am=1&logo=1&br1=16&br2=12&hs1=1&hs2=1&bd=0&bdcolor=000000" width="320" height="140" frameborder="0" style="border:0;overflow:hidden"></iframe>
+
 <!-- CI STATUS -->
 <p align="center">
   <a href="https://github.com/iamtanzir/iamtanzir/actions/workflows/clock.yml"><img src="https://github.com/iamtanzir/iamtanzir/actions/workflows/clock.yml/badge.svg" alt="Clock CI" /></a>
