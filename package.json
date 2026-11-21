@@ -1,0 +1,10 @@
+{
+  "name": "digital-clock",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node generate-clock.js"
+  },
+  "dependencies": {
+    "digital-svg-clock": "^0.1.2"
+  }
+}
