@@ -35,6 +35,45 @@ addEventListener("fetch", (event) => {
   event.respondWith(renderClock());
 });
 
+// Every minute, bump the cache-buster in README.md directly through the
+// GitHub API. This avoids GitHub Actions' delayed scheduler, so camo always
+// fetches a fresh SVG (max staleness ~1 minute) instead of a 5+ min snapshot.
+addEventListener("scheduled", (event) => {
+  event.waitUntil(bumpReadmeCacheBuster());
+});
+
+async function bumpReadmeCacheBuster() {
+  const token = typeof GITHUB_TOKEN !== "undefined" ? GITHUB_TOKEN : "";
+  if (!token) return;
+  const api = "https://api.github.com/repos/iamtanzir/iamtanzir/contents/README.md";
+  const headers = {
+    "Authorization": "Bearer " + token,
+    "User-Agent": "live-clock-worker",
+    "Accept": "application/vnd.github+json",
+  };
+  try {
+    const res = await fetch(api, { headers });
+    if (!res.ok) return;
+    const data = await res.json();
+    const md = atob(data.content.replace(/\s/g, ""));
+    const next = "?v=" + Date.now();
+    const updated = md.replace(/\?v=\d+/g, next);
+    if (updated === md) return;
+    await fetch(api, {
+      method: "PUT",
+      headers: Object.assign({}, headers, { "Content-Type": "application/json" }),
+      body: JSON.stringify({
+        message: "🕐 Refresh live clock [skip ci]",
+        content: btoa(unescape(encodeURIComponent(updated))),
+        sha: data.sha,
+        branch: "main",
+      }),
+    });
+  } catch (e) {
+    // Cron failures are non-fatal; the next tick retries.
+  }
+}
+
 async function renderClock() {
   let h24, minute, second;
   try {
