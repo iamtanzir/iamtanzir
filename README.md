@@ -8,13 +8,9 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00FF88&center=true&vCenter=true&width=650&lines=CS+Engineer+%7C+ERP+Analyst+%7C+Planner;11%2B+Years+in+Apparel+ERP;Cloud+%7C+Kubernetes+%7C+CI%2FCD;Always+building%2C+always+automating" alt="Typing SVG" />
 </a>
 
-<!-- Tagline -->
-<p><b>CS Engineer | ERP Analyst | Planner</b><br/>
-📍 Dhaka, Bangladesh (UTC+06:00) · Open to remote worldwide</p>
-
-<!-- LIVE MINI DIGITAL CLOCK (SMIL Animated SVG) -->
+<!-- LIVE MINI DIGITAL CLOCK (Only Digits & AM/PM) -->
 <p>
-  <img src="assets/bd-clock.svg" alt="Live Dhaka Digital Clock" width="420" />
+  <img src="assets/bd-clock.svg" alt="Live Dhaka Digital Clock" width="350" />
 </p>
 
 <!-- Social & Contact Badges -->
