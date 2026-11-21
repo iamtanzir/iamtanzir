@@ -5,12 +5,22 @@
  * GitHub's image proxy renders a live ticking clock. CI regenerates every
  * 5 minutes to keep hours/minutes/AM-PM anchored to real time.
  */
-const now = new Date();
-const dhaka = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Dhaka" }));
-
-const h24 = dhaka.getHours();
-const minute = dhaka.getMinutes();
-const second = dhaka.getSeconds();
+// Accurate Dhaka time from the free Time.Now World Time API, with a
+// UTC+06:00 fallback if the API is unreachable during CI.
+let h24, minute, second;
+try {
+  const res = await fetch("https://time.now/developer/api/time?timezone=Asia%2FDhaka");
+  const data = await res.json();
+  const m = data.datetime.match(/T(\d{2}):(\d{2}):(\d{2})/);
+  h24 = Number(m[1]);
+  minute = Number(m[2]);
+  second = Number(m[3]);
+} catch {
+  const dhaka = new Date(Date.now() + 6 * 3600 * 1000);
+  h24 = dhaka.getUTCHours();
+  minute = dhaka.getUTCMinutes();
+  second = dhaka.getUTCSeconds();
+}
 const isPM = h24 >= 12;
 const h12 = ((h24 + 11) % 12) + 1;
 
