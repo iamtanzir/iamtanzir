@@ -3,20 +3,10 @@
 <!-- Animated Header -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF88,100:0066FF&height=200&section=header&text=AKM%20Tanzir%20Ahmed&fontSize=70&fontAlignY=35&animation=fadeIn&fontColor=ffffff" width="100%" />
 
-<!-- 3-Line RGB Typing Animation (Fixed Vertical Stacking) -->
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=00FF88&center=true&vCenter=true&width=800&height=50&lines=CS+Engineer+%7C+ERP+Analyst+%7C+Planner" alt="CS Engineer" />
-  </a>
-  <br>
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=FF4444&center=true&vCenter=true&width=800&height=50&lines=Cloud+%7C+Kubernetes+%7C+CI%2FCD" alt="Cloud" />
-  </a>
-  <br>
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=3B82F6&center=true&vCenter=true&width=800&height=50&lines=11%2B+Years+in+Apparel+ERP" alt="Experience" />
-  </a>
-</div>
+<!-- Sequential Typing Animation (One by One) -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=00FF88&center=true&vCenter=true&width=800&height=50&lines=CS+Engineer+%7C+ERP+Analyst+%7C+Planner;Cloud+%7C+Kubernetes+%7C+CI%2FCD;11%2B+Years+in+Apparel+ERP" alt="Typing SVG" />
+</a>
 
 <!-- LIVE MINI DIGITAL CLOCK -->
 <p>
