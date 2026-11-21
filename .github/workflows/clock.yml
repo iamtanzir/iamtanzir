@@ -1,4 +1,4 @@
-name: Update Digital Clock SVG
+name: Update Mini Clock SVG
 
 on:
   schedule:
@@ -20,15 +20,13 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies and Generate Clock
-        run: |
-          npm install
-          npm run build
+      - name: Generate Clock
+        run: npm run build
 
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add digital-clock.svg
-          git commit -m "🕐 Auto-update Live Digital Clock" || exit 0
+          git add assets/bd-clock.svg
+          git commit -m "🕐 Auto-update Mini Clock SVG" || exit 0
           git push
