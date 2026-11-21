@@ -23,12 +23,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Generate Clock
-        run: node scripts/clock.mjs > assets/bd-clock.svg
+      - name: Generate Clock and bust README cache
+        run: |
+          node scripts/clock.mjs > assets/bd-clock.svg
+          node scripts/bust-cache.mjs
       - name: Commit and Push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/bd-clock.svg
+          git add assets/bd-clock.svg README.md
           git commit -m "🕐 Auto-update Live Digital Clock" || exit 0
           git push
