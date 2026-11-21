@@ -12,9 +12,9 @@
 <p><b>CS Engineer | ERP Analyst | Planner</b><br/>
 📍 Dhaka, Bangladesh (UTC+06:00) · Open to remote worldwide</p>
 
-<!-- Live BD Digital Clock -->
+<!-- Live BD Digital Clock (Fixed with time.now API) -->
 <p>
-  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fworldtimeapi.org%2Fapi%2Ftimezone%2FAsia%2FDhaka&query=%24.time&label=%F0%9F%95%90%20Live%20Dhaka%20Time%20(UTC%2B06%3A00)&color=00FF88&style=for-the-badge" alt="Live Dhaka Time" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Ftime.now%2Fdeveloper%2Fapi%2Ftime%3Ftimezone%3DAsia%2FDhaka&query=%24.datetime&label=%F0%9F%95%90%20Live%20Dhaka%20Time%20(UTC%2B06%3A00)&color=00FF88&style=for-the-badge" alt="Live Dhaka Time" />
 </p>
 
 <!-- Social & Contact Badges -->
