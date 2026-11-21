@@ -46,7 +46,7 @@ const hoursTensSeq = Array.from({ length: 12 }, (_, i) => Math.floor((i + 1) / 1
 const slots = [
   { seq: hoursTensSeq, dur: 43200, pos: h12 - 1 },
   { seq: hoursSeq,     dur: 43200, pos: h12 - 1 },
-  { seq: [0, 1, 2, 3, 4, 5], dur: 3600, pos: minute },
+  { seq: [0, 1, 2, 3, 4, 5], dur: 3600, pos: Math.floor(minute / 10) },
   { seq: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], dur: 600, pos: minute % 10 },
   { seq: [0, 1, 2, 3, 4, 5], dur: 60, pos: Math.floor(second / 10) },
   { seq: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], dur: 10, pos: second % 10 },
