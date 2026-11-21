@@ -11,8 +11,6 @@
 <!-- LIVE MINI DIGITAL CLOCK -->
 <p>
   <img src="assets/bd-clock.svg" alt="Live Dhaka Digital Clock" width="350" />
-  <br/>
-  <img src="https://github.com/iamtanzir/iamtanzir/actions/workflows/clock.yml/badge.svg" alt="Clock CI" />
 </p>
 
 <!-- Social & Contact Badges -->
