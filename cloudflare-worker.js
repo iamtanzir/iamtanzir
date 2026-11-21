@@ -23,7 +23,13 @@ addEventListener("fetch", (event) => {
   // GitHub's camo proxy caches images by URL. Redirect to a unique URL per
   // request so camo can never serve a stale cached frame.
   if (url.pathname === "/") {
-    event.respondWith(Response.redirect("https://live-clock.tanzir-ahmed.workers.dev/t/" + Date.now(), 302));
+    event.respondWith(new Response(null, {
+      status: 302,
+      headers: {
+        "Location": "https://live-clock.tanzir-ahmed.workers.dev/t/" + Date.now(),
+        "Cache-Control": "no-store, no-cache, must-revalidate",
+      },
+    }));
     return;
   }
   event.respondWith(renderClock());
