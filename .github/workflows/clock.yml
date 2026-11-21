@@ -2,8 +2,8 @@ name: Update Digital Clock SVG
 
 on:
   schedule:
-    - cron: '0 * * * *' # প্রতি ১ ঘণ্টায় আপডেট হবে (SMIL অ্যানিমেশনের ড্রিফট ঠিক করতে)
-  workflow_dispatch: # ম্যানুয়ালি রান করার অপশন
+    - cron: '*/15 * * * *' # প্রতি ১৫ মিনিটে আপডেট হবে (SMIL অ্যানিমেশন লাইভ টিকিং হ্যান্ডেল করবে)
+  workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
 
 permissions:
   contents: write
@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install dependencies and Generate Clock
         run: |
