@@ -4,5 +4,9 @@
   "type": "module",
   "scripts": {
     "build": "node generate-clock.js"
+  },
+  "dependencies": {
+    "gifenc": "^1.0.3",
+    "sharp": "^0.35.5"
   }
 }

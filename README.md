@@ -10,7 +10,7 @@
 
 <!-- LIVE MINI DIGITAL CLOCK -->
 <p>
-  <img src="assets/bd-clock.svg" alt="Live Dhaka Digital Clock" width="350" />
+  <img src="assets/bd-clock.gif" alt="Live Dhaka Digital Clock" width="350" />
 </p>
 
 <!-- LIVE CLOCK LINK (GitHub strips <iframe>, so use a link) -->

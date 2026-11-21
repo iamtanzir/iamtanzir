@@ -1,35 +1,38 @@
-name: Update Mini Clock SVG
+name: Update Live Digital Clock
 
 on:
   push:
     branches: [main]
   schedule:
-    - cron: '*/5 * * * *' # refresh every 5 minutes (GitHub Actions minimum)
-  workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
+    - cron: '*/5 * * * *' # refresh every 5 minutes
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: clock-update
+  cancel-in-progress: false
 
 jobs:
   update-clock:
     if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      - name: Generate Clock
-        run: npm run build
-
+      - name: Install dependencies
+        run: npm ci
+      - name: Generate clock SVG and animated GIF
+        run: |
+          npm run build
+          node scripts/gif-clock.mjs
       - name: Commit and Push changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/bd-clock.svg
-          git commit -m "🕐 Auto-update Mini Clock SVG" || exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/bd-clock.svg assets/bd-clock.gif
+          git commit -m "🕐 Auto-update Live Digital Clock" || exit 0
           git push
