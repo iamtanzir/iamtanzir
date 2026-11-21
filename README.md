@@ -3,9 +3,9 @@
 <!-- Animated Header -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF88,100:0066FF&height=200&section=header&text=AKM%20Tanzir%20Ahmed&fontSize=70&fontAlignY=35&animation=fadeIn&fontColor=ffffff" width="100%" />
 
-<!-- Typing Animation -->
+<!-- RGB 3x Big Typing Animation -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00FF88&center=true&vCenter=true&width=650&lines=CS+Engineer+%7C+ERP+Analyst+%7C+Planner;11%2B+Years+in+Apparel+ERP;Cloud+%7C+Kubernetes+%7C+CI%2FCD;Always+building%2C+always+automating" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=36&pause=1000&center=true&vCenter=true&width=900&height=100&lines=%3Cspan%20style%3D%22color%3A%23FF4444%22%3ECS%20Engineer%20%7C%20ERP%20Analyst%20%7C%20Planner%3C%2Fspan%3E;%3Cspan%20style%3D%22color%3A%2300FF88%22%3ECS%20Engineer%20%7C%20ERP%20Analyst%20%7C%20Planner%3C%2Fspan%3E;%3Cspan%20style%3D%22color%3A%233B82F6%22%3ECS%20Engineer%20%7C%20ERP%20Analyst%20%7C%20Planner%3C%2Fspan%3E" alt="Typing SVG" />
 </a>
 
 <!-- LIVE MINI DIGITAL CLOCK (Only Digits & AM/PM) -->
